@@ -15,7 +15,6 @@ const Footer = () => {
           >
             LinkedIn
           </a>
-          <p>(778) 919 - 3318</p>
           <p>parnell.tse@gmail.com</p>
         </div>
       </div>

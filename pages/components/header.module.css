@@ -7,7 +7,7 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -18,11 +18,10 @@
 .navList {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
     margin: 0;
     padding: 0;
 }
-
 
 .navLink {
     text-decoration: none;
@@ -33,4 +32,10 @@
 
 .navLink:hover {
     color: #99755c;
+}
+
+.navList li:not(:last-child)::after {
+    content: "/";
+    margin-left: 0.5rem;
+    color: #374735;
 }
