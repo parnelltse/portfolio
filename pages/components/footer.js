@@ -5,17 +5,8 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <p className={styles.shy}>Don't be shy! Drop me a line ;)</p>
         <div className={styles.socialLinks}>
-          <a
-            className={styles.link}
-            href="https://www.linkedin.com/in/parnelltse/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-          <p>parnell.tse@gmail.com</p>
+          <p>Parnell Tse - © 2025</p>
         </div>
       </div>
     </footer>
