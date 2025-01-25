@@ -17,8 +17,10 @@
 
 .roleContainer {
     margin-top: 1rem;
-    height: 3rem;
-    overflow: hidden;
+    height: auto; /* Allow the container to adjust to the content */
+    min-height: 4rem; /* Set a minimum height to keep it visually consistent */
+    max-height: 10rem; /* Optional: Limit height if needed */
+    overflow: hidden; /* Keep text within the bounds */
 }
 
 .role {
@@ -27,7 +29,9 @@
     color: #374735;
     display: inline-block;
     animation: fade 3s ease-in-out infinite;
+    white-space: nowrap; /* Prevent wrapping, optional */
 }
+
 
 .heading {
     font-size: 4rem;

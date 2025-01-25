@@ -12,6 +12,7 @@ const Body = () => {
     "I love pizza",
     "I am a croissant connoisseur",
     "I enjoy watching Formula 1",
+    "I want to make a difference"
   ];
 
   useEffect(() => {
