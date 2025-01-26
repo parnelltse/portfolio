@@ -2,7 +2,8 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import Head from "next/head";
 import InfoBlock from "./components/info_block";
-import styles from "../styles/Eirene.module.css"
+import styles from "../styles/Eirene.module.css";
+import Image from "next/image";
 
 export default function Eirene() {
     return (
@@ -16,6 +17,15 @@ export default function Eirene() {
             <div className={styles.homeContainer}>
                 <Header />
                 <main className={styles.content}>
+                    <div className={styles.imageContainer}>
+                        <Image
+                            src="/mag mock cover.png"
+                            alt="Eirene Magazine Cover"
+                            width={825}
+                            height={600}
+                            className={styles.mag}
+                        />
+                    </div>
                     <h0 className={styles.title}>Eirene</h0>
                     <h4 className={styles.subhead}>Designing and curating an Art Deco-inspired interior design magazine</h4>
                     <p className={styles.emoticon}>(∩｀-´)⊃ ☆ﾟ.*･｡ﾟ</p>
@@ -29,13 +39,37 @@ export default function Eirene() {
                             and combining them into one magazine, it keeps the reader interested and engaged while
                             reading the publication.
                         </p>
-                        <InfoBlock className={styles.role} items={[
-                            { title: "Year", bodyText: "September 2024 – October 2024" },
-                            { title: "Role", bodyText: "Designer, Researcher" },
-                            { title: "Skills", bodyText: "InDesign, Photoshop, Text layout, Graphic Design, Typography, Photo editing, Research" }
-                        ]} />
+                        <InfoBlock className={styles.role} items={[{
+                            title: "Year", bodyText: "September 2024 – October 2024"
+                        }, {
+                            title: "Role", bodyText: "Designer, Researcher"
+                        }, {
+                            title: "Skills", bodyText: "InDesign, Photoshop, Text layout, Graphic Design, Typography, Photo editing, Research"
+                        }]} />
 
+                       
                     </div>
+                     {/* Image grid container */}
+                     <div className={styles.imageGrid}>
+                            <div className={styles.imageItem}>
+                                <Image
+                                    src="/wallpap.png"
+                                    alt="Wallpaper"
+                                    width={500}
+                                    height={400}
+                                    className={styles.image1}
+                                />
+                            </div>
+                            <div className={styles.imageItem}>
+                                <Image
+                                    src="/bathroom.png"
+                                    alt="Bathroom design"
+                                    width={500}
+                                    height={400}
+                                    className={styles.image2}
+                                />
+                            </div>
+                        </div>
                 </main>
                 <Footer />
             </div>

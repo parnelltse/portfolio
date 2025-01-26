@@ -25,27 +25,48 @@
 
 .textAndRoleContainer {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Body text takes 2 parts, InfoBlock takes 1 part */
-    align-items: start; /* Aligns items to the top */
-   
+    grid-template-columns: 2fr 1fr; 
+    align-items: start; 
+    column-gap: 10rem;
 }
 
 .body_text {
     font-size: 1rem;
     line-height: 1.5;
- 
+    margin-top: 1.5rem;
 }
 
-.role{
+.role {
     align-items: start;
-    font-size: 100;
 }
 
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.mag {
+    border-radius: 10px;
+}
 
+.imageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 images side by side */
+    gap: 10px; /* Reduce space between the images */
+    margin-top: 5rem; /* Space between text and images */
+}
 
+.imageItem {
+    overflow: hidden;
+}
 
+.image1, .image2, .image3 {
+    width: 100%; /* Increase image width to fill the grid more closely */
+    height: auto; /* Maintain aspect ratio */
+}
 
-
-
-
+.content{
+    margin-left: 20rem;
+    margin-right: 20rem;
+}

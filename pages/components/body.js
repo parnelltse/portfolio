@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./body.module.css";
+import Link from "next/link";
 
 const Body = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -30,6 +31,9 @@ const Body = () => {
         <span className={styles.role} key={roleIndex}>
           {roles[roleIndex]}
         </span>
+        <Link href="/eirene">
+              <button className="button">Go to Eirene</button>
+            </Link>
       </div>
     </main>
   );
