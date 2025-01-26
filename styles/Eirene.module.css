@@ -1,0 +1,39 @@
+.homeContainer {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url('/paper.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 3rem;
+    color: #374735;
+    margin-bottom: 0.5rem; 
+}
+
+.subhead {
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-top: 0; 
+}
+
+.emoticon{
+    color: #99755c;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title, .subhead, .emoticon{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    margin-left: 25vw; 
+    margin-right: 25vw;  
+    box-sizing: border-box;
+}
+
