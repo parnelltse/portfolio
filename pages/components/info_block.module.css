@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0rem; /* Reduced margin to make titles closer */
+    text-decoration: underline;
+    text-align: left;
+    margin-right: 7.75rem;
+}
+
+.bodyText {
+    font-size: 1rem;
+    margin-top: 0rem; /* Reduced margin to make body text closer to title */
+    font-weight: 100;
+    text-align: left;
+}
+
+.container > *:not(:last-child) {
+    margin-bottom: 0rem; /* Reduced gap between items */
+}

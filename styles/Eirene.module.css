@@ -10,30 +10,23 @@
     font-weight: 600;
     font-size: 3rem;
     color: #374735;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
 }
 
 .subhead {
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1.5rem;
-    margin-top: 0; 
+    margin-top: 0;
 }
 
-.emoticon{
+.emoticon {
     color: #99755c;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-}
 
-.title, .subhead, .emoticon{
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center;
-    margin-left: 25vw; 
-    margin-right: 25vw;  
-    box-sizing: border-box;
-}
+
+
+
+
+
 
