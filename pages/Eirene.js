@@ -2,7 +2,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import Head from "next/head";
 import InfoBlock from "./components/info_block";
-import styles from "../styles/eirene.module.css"
+import styles from "../styles/Eirene.module.css"
 
 export default function Eirene() {
     return (
