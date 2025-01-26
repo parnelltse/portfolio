@@ -8,14 +8,14 @@
 .title {
     font-size: 1.25rem;
     font-weight: 400;
-    margin-bottom: 0rem; /* Reduced margin to make titles closer */
     text-decoration: underline;
     text-align: left;
     margin-right: 7.75rem;
+    color: #374735;
 }
 
 .bodyText {
-    font-size: 2rem;
+    font-size: 0.75rem;
     font-weight: 100;
     text-align: left;
 }

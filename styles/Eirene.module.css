@@ -23,6 +23,25 @@
     color: #99755c;
 }
 
+.textAndRoleContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Body text takes 2 parts, InfoBlock takes 1 part */
+    align-items: start; /* Aligns items to the top */
+   
+}
+
+.body_text {
+    font-size: 1rem;
+    line-height: 1.5;
+ 
+}
+
+.role{
+    align-items: start;
+    font-size: 100;
+}
+
+
 
 
 
