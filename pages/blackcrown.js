@@ -37,7 +37,7 @@ export default function Eirene() {
                 The design process for BlackCrown Meadery focused on creating a
                 bold visual identity inspired by royal battles, featuring a
                 modern crown emblem in black, white, and crimson for the logo,
-                while the can’s color represents the mead’s flavor. The
+                while the can’s colour represents the mead’s flavor. The
                 bilingual English-French design adheres to Canadian guidelines,
                 with a sophisticated palette conveying power and luxury. This
                 approach targets premium beverage consumers seeking a drink that
