@@ -33,7 +33,7 @@ const Body = () => {
         </span>
       </div>
       <div className={styles.buttonContainer}>
-        <Link href="/eirene">
+        <Link href="/Eirene">
           <button className={styles.button}>Go to Eirene</button>
         </Link>
       </div>
