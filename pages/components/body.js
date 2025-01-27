@@ -31,9 +31,11 @@ const Body = () => {
         <span className={styles.role} key={roleIndex}>
           {roles[roleIndex]}
         </span>
+      </div>
+      <div className={styles.buttonContainer}>
         <Link href="/eirene">
-              <button className="button">Go to Eirene!</button>
-            </Link>
+          <button className={styles.button}>Go to Eirene</button>
+        </Link>
       </div>
     </main>
   );
