@@ -36,12 +36,6 @@ const Body = () => {
         <Link href="/eirene">
           <button className={styles.button}>Go to Eirene</button>
         </Link>
-        <Link href="/about">
-          <button className={styles.button}>Go to Eirene</button>
-        </Link>
-        <Link href="/eirenemag">
-          <button className={styles.button}>Go to Eirene!</button>
-        </Link>
       </div>
     </main>
   );
