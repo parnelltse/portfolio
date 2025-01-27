@@ -1,7 +1,7 @@
-import Footer from "../components/footer";
-import Header from "../components/header";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 import Head from "next/head";
-import InfoBlock from "../components/info_block";
+import InfoBlock from "@/components/info_block";
 import styles from "../styles/Eirene.module.css";
 import Image from "next/image";
 
