@@ -32,7 +32,7 @@ const Body = () => {
           {roles[roleIndex]}
         </span>
         <Link href="/eirene">
-              <button className="button">Go to Eirene</button>
+              <button className="button">Go to Eirene!</button>
             </Link>
       </div>
     </main>
