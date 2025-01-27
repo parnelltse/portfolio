@@ -9,7 +9,7 @@ export default function Eirene() {
     return (
         <>
             <Head>
-                <title>Eirene!</title>
+                <title>Eirene</title>
                 <meta name="description" content="Eirene Magazine" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />

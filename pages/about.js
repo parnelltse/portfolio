@@ -1,15 +1,15 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
+import Footer from "../components/footer";
+import Header from "../components/header";
 import Head from "next/head";
-import InfoBlock from "@/components/info_block";
+import InfoBlock from "../components/info_block";
 import styles from "../styles/Eirene.module.css";
 import Image from "next/image";
 
-export default function Eirene() {
+export default function About() {
     return (
         <>
             <Head>
-                <title>Eirene!</title>
+                <title>About</title>
                 <meta name="description" content="Eirene Magazine" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
