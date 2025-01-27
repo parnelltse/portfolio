@@ -53,9 +53,9 @@ export default function Eirene() {
                     <div className={styles.imageGrid}>
                         <div className={styles.imageItem}>
                             <Image
-                                src="/wallpap.png"
+                                src="/spread1.png"
                                 alt="Wallpaper"
-                                width={500}
+                                width={400}
                                 height={400}
                                 className={styles.image1}
                             />
