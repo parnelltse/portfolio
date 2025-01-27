@@ -27,7 +27,7 @@ export default function Eirene() {
                         />
                     </div>
                     <div className={styles.content}>
-                        <h1 className={styles.title}>Eirene</h1> 
+                        <h1 className={styles.title}>Eirene</h1>
                         <h4 className={styles.subhead}>Designing and curating an Art Deco-inspired interior design magazine</h4>
                         <p className={styles.emoticon}>(∩｀-´)⊃ ☆ﾟ.*･｡ﾟ</p>
                         <div className={styles.textAndRoleContainer}>
@@ -56,7 +56,7 @@ export default function Eirene() {
                                 alt="Art Deco Design"
                                 width={500}
                                 height={400}
-                                layout="responsive"  
+                                layout="responsive"
                                 className={styles.image1}
                             />
                         </div>
@@ -66,7 +66,7 @@ export default function Eirene() {
                                 alt="Art Deco Layout"
                                 width={500}
                                 height={400}
-                                layout="responsive"  
+                                layout="responsive"
                                 className={styles.image2}
                             />
                         </div>
@@ -76,7 +76,7 @@ export default function Eirene() {
                                 alt="Art Deco Layout"
                                 width={500}
                                 height={400}
-                                layout="responsive"  
+                                layout="responsive"
                                 className={styles.image2}
                             />
                         </div>
@@ -86,21 +86,21 @@ export default function Eirene() {
                                 alt="Art Deco Layout"
                                 width={500}
                                 height={400}
-                                layout="responsive"  
+                                layout="responsive"
                                 className={styles.image2}
                             />
                         </div>
                     </div>
                     <div className={styles.imageItem2}>
-                            <Image
-                                src="/bath.png"
-                                alt="Art Deco Layout"
-                                width={500}
-                                height={400}
-                                layout="responsive"  
-                                className={styles.image3}
-                            />
-                        </div>
+                        <Image
+                            src="/bath.png"
+                            alt="Art Deco Layout"
+                            width={500}
+                            height={400}
+                            layout="responsive"
+                            className={styles.image3}
+                        />
+                    </div>
                 </main>
                 <Footer />
             </div>

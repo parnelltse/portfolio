@@ -83,44 +83,44 @@ export default function Eirene() {
                                 className={styles.image2}
                             />
                         </div>
-</div>
-                        <div className={styles.captionContent}>
-                            <p className={styles.caption}>
-                                Drink can mockups
-                            </p>
+                    </div>
+                    <div className={styles.captionContent}>
+                        <p className={styles.caption}>
+                            Drink can mockups
+                        </p>
+                    </div>
+                    <div className={styles.imageGrid}>
+                        <div className={styles.imageItem}>
+                            <Image
+                                src="/123.png"
+                                alt="drinkmockup"
+                                width={500}
+                                height={400}
+                                layout="responsive"
+                                className={styles.image2}
+                            />
                         </div>
-                        <div className={styles.imageGrid}>
-                            <div className={styles.imageItem}>
-                                <Image
-                                    src="/123.png"
-                                    alt="drinkmockup"
-                                    width={500}
-                                    height={400}
-                                    layout="responsive"
-                                    className={styles.image2}
-                                />
-                            </div>
-                            <div className={styles.imageItem}>
-                                <Image
-                                    src="/1234.png"
-                                    alt="drinkmockup2"
-                                    width={500}
-                                    height={400}
-                                    layout="responsive"
-                                    className={styles.image2}
-                                />
-                            </div>
-                            <div className={styles.imageItem}>
-                                <Image
-                                    src="/12345.png"
-                                    alt="drinkmockup3"
-                                    width={500}
-                                    height={400}
-                                    layout="responsive"
-                                    className={styles.image2}
-                                />
-                            </div>
-                       
+                        <div className={styles.imageItem}>
+                            <Image
+                                src="/1234.png"
+                                alt="drinkmockup2"
+                                width={500}
+                                height={400}
+                                layout="responsive"
+                                className={styles.image2}
+                            />
+                        </div>
+                        <div className={styles.imageItem}>
+                            <Image
+                                src="/12345.png"
+                                alt="drinkmockup3"
+                                width={500}
+                                height={400}
+                                layout="responsive"
+                                className={styles.image2}
+                            />
+                        </div>
+
                     </div>
 
                 </main>
