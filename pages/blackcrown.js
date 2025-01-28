@@ -65,13 +65,13 @@ export default function Eirene() {
           </div>
 
           <div className={styles.captionContent}>
-            <p className={styles.caption}>Client proofs for the beverage</p>
+            <p className={styles.caption}>Drink can mockups</p>
           </div>
           <div className={styles.imageGrid}>
             <div className={styles.imageItem}>
               <Image
-                src="/blackcrown1.png"
-                alt="proof1"
+                src="/123.png"
+                alt="mock1"
                 width={500}
                 height={400}
                 layout="responsive"
@@ -80,43 +80,8 @@ export default function Eirene() {
             </div>
             <div className={styles.imageItem}>
               <Image
-                src="/blackcrown2.png"
-                alt="proof2"
-                width={500}
-                height={400}
-                layout="responsive"
-                className={styles.image2}
-              />
-            </div>
-            <div className={styles.imageItem}>
-              <Image
-                src="/blackcrown3.png"
-                alt="proof3"
-                width={500}
-                height={400}
-                layout="responsive"
-                className={styles.image2}
-              />
-            </div>
-          </div>
-          <div className={styles.captionContent}>
-            <p className={styles.caption}>Drink can mockups</p>
-          </div>
-          <div className={styles.imageGrid}>
-            <div className={styles.imageItem}>
-              <Image
-                src="/123.png"
-                alt="drinkmockup"
-                width={500}
-                height={400}
-                layout="responsive"
-                className={styles.image2}
-              />
-            </div>
-            <div className={styles.imageItem}>
-              <Image
                 src="/1234.png"
-                alt="drinkmockup2"
+                alt="mock2"
                 width={500}
                 height={400}
                 layout="responsive"
@@ -126,7 +91,42 @@ export default function Eirene() {
             <div className={styles.imageItem}>
               <Image
                 src="/12345.png"
-                alt="drinkmockup3"
+                alt="mock3"
+                width={500}
+                height={400}
+                layout="responsive"
+                className={styles.image2}
+              />
+            </div>
+          </div>
+          <div className={styles.captionContent}>
+            <p className={styles.caption}>Dielines</p>
+          </div>
+          <div className={styles.imageGrid}>
+            <div className={styles.imageItem}>
+              <Image
+                src="/reddie.png"
+                alt="dieline1"
+                width={500}
+                height={400}
+                layout="responsive"
+                className={styles.image2}
+              />
+            </div>
+            <div className={styles.imageItem}>
+              <Image
+                src="/yellowdie.png"
+                alt="dieline2"
+                width={500}
+                height={400}
+                layout="responsive"
+                className={styles.image2}
+              />
+            </div>
+            <div className={styles.imageItem}>
+              <Image
+                src="/pinkdie.png"
+                alt="dieline3"
                 width={500}
                 height={400}
                 layout="responsive"
