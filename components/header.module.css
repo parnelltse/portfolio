@@ -1,6 +1,4 @@
 .header {
-    background: linear-gradient(rgba(225, 225, 225, 0.1), rgba(225, 225, 225, 0.1)),
-        url('/paper.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

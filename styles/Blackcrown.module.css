@@ -25,8 +25,8 @@
 
 .textAndRoleContainer {
     display: grid;
-    grid-template-columns: 2fr 1fr; 
-    align-items: start; 
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
     column-gap: 10rem;
 }
 
@@ -41,27 +41,36 @@
 }
 
 .imageContainer {
-    width: 100%; /* Make the container take up the full width of its parent */
-    height: 400px; /* Set the desired height for the container */
-    overflow: hidden; /* Ensure no part of the image overflows the container */
-    position: relative; /* Allow the image to align within the container */
-    display: flex; /* Center the image */
+    width: 100%;
+    /* Make the container take up the full width of its parent */
+    height: 400px;
+    /* Set the desired height for the container */
+    overflow: hidden;
+    /* Ensure no part of the image overflows the container */
+    position: relative;
+    /* Allow the image to align within the container */
+    display: flex;
+    /* Center the image */
     align-items: center;
     justify-content: center;
 }
 
-.imageContainer2{
-    width: 100%; /* Make the container take up the full width of its parent */
-    height: 675px; 
-    overflow: hidden; /* Ensure no part of the image overflows the container */
-    position: relative; /* Allow the image to align within the container */
-    display: flex; /* Center the image */
+.imageContainer2 {
+    width: 100%;
+    /* Make the container take up the full width of its parent */
+    height: 675px;
+    overflow: hidden;
+    /* Ensure no part of the image overflows the container */
+    position: relative;
+    /* Allow the image to align within the container */
+    display: flex;
+    /* Center the image */
     align-items: center;
     justify-content: center;
 }
 
 .mag {
-    width: 100%; 
+    width: 100%;
     max-width: 600px;
     height: auto;
     object-fit: contain;
@@ -73,8 +82,8 @@
 .imageGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto); 
-    gap: 20px; 
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
 }
 
 .imageItem {
@@ -83,32 +92,36 @@
 }
 
 .imageItem2 {
-    width: 50%; /* Set the width of the item */
-    margin: 0 auto; /* Centers the element horizontally */
-    display: block; /* Ensures it behaves as a block-level element */
-    text-align: center; /* Centers text inside the image if necessary */
+    width: 50%;
+    /* Set the width of the item */
+    margin: 0 auto;
+    /* Centers the element horizontally */
+    display: block;
+    /* Ensures it behaves as a block-level element */
+    text-align: center;
+    /* Centers text inside the image if necessary */
 }
 
 
-.image1, .image2 {
+.image1,
+.image2 {
     width: 100%;
     height: auto;
-    object-fit: cover;  /* Ensures the image scales well without stretching */
+    object-fit: cover;
+    /* Ensures the image scales well without stretching */
 }
 
 
 
-.content{
+.content {
     margin-left: 20rem;
     margin-right: 20rem;
 }
 
-.caption{
+.caption {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
     font-size: 0.75rem;
-    
+
 }
-
-
