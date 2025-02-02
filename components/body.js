@@ -42,6 +42,11 @@ const Body = () => {
           <button className={styles.button}>Go to blackcrown</button>
         </Link>
       </div>
+      <div className={styles.buttonContainer}>
+        <Link href="/seiko">
+          <button className={styles.button}>Go to Seiko</button>
+        </Link>
+      </div>
     </main>
   );
 };
