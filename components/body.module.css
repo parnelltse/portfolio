@@ -17,10 +17,14 @@
 
 .roleContainer {
     margin-top: 1rem;
-    height: auto; /* Allow the container to adjust to the content */
-    min-height: 4rem; /* Set a minimum height to keep it visually consistent */
-    max-height: 10rem; /* Optional: Limit height if needed */
-    overflow: hidden; /* Keep text within the bounds */
+    height: auto;
+    /* Allow the container to adjust to the content */
+    min-height: 4rem;
+    /* Set a minimum height to keep it visually consistent */
+    max-height: 10rem;
+    /* Optional: Limit height if needed */
+    overflow: hidden;
+    /* Keep text within the bounds */
 }
 
 .role {
@@ -29,12 +33,20 @@
     color: #374735;
     display: inline-block;
     animation: fade 3s ease-in-out infinite;
-    white-space: nowrap; /* Prevent wrapping, optional */
+    white-space: nowrap;
+    /* Prevent wrapping, optional */
 }
 
 
 .heading {
     font-size: 4rem;
+}
+
+.griddy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
 }
 
 /* Keyframe animation */

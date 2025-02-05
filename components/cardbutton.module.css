@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.yoda {
+    --timing: 400ms;
+    --rotation: 20deg;
+
+    width: 300px;
+    /* Make the card wider */
+    height: 350px;
+    /* Adjust height to make it not too tall */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: rotate var(--timing) ease, transform var(--timing);
+    border-radius: 10px;
+    /* Optional: Add rounded corners for a smoother look */
+}
+
+.yoda:hover {
+    rotate: x var(--rotation);
+}
+
+/* Background Image */
+.bgImage {
+    object-fit: cover;
+    /* Ensures the image is fully visible without cropping */
+    object-position: center;
+    z-index: 1;
+    position: absolute;
+    /* Ensures the background fits inside the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Full width of the card */
+    height: 100%;
+    /* Full height of the card */
+}
+
+/* Front Image */
+.frontImage {
+    object-fit: contain;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity var(--timing), transform var(--timing);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Full width of the card */
+    height: 100%;
+    /* Full height of the card */
+}
+
+.yoda:hover .frontImage {
+    opacity: 1;
+    transform: translateY(-10px) translateZ(10px);
+}
+
+/* Logo */
+
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+    background-image: radial-gradient(circle, transparent 55px, black);
+    opacity: 0;
+    transition: opacity var(--timing);
+}
+
+.yoda:hover .overlay {
+    opacity: 1;
+}
+
+/* Shadow */
+.shadow {
+    position: absolute;
+    inset: 80% 0.5rem 0.5rem;
+    transform: translateZ(-50px);
+    background: black;
+    filter: blur(2.5rem);
+    z-index: 1;
+    transition: rotate var(--timing), translate var(--timing);
+}
+
+.yoda:hover .shadow {
+    rotate: x calc(var(--rotation) * -1);
+    translate: 0 20px;
+}
+
+.cardButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    /* Ensures the card looks like a clickable button */
+}
+
+.text {
+    position: absolute;
+    bottom: 10px;
+    /* Position text at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    /* Adjust text color as needed */
+    font-size: 1.2rem;
+    /* Adjust font size */
+    font-weight: bold;
+    text-align: center;
+    z-index: 100;
+}
