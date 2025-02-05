@@ -116,6 +116,15 @@ export default function Eirene() {
               className={styles.image3}
             />
           </div>
+          <div className={styles.emag}>
+            <a
+              href="https://indd.adobe.com/view/52a150cf-e208-4918-8ccd-432a3e65131d"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>Click Here to read the Electronic Magazine Online!</p>
+            </a>
+          </div>
         </main>
         <Footer />
       </div>
