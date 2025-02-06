@@ -46,18 +46,21 @@
 .imageContainer2{
     width: 100%; /* Make the container take up the full width of its parent */
     min-width: none;
-    height: 30rem; 
+    height: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     background-color: #374735;
+    align-items: center;
+    justify-items: center;
 }
 
 .mag {
     width: 100%; 
-    max-width: 40rem;
+    max-width: 12rem;
     height: auto;
     object-fit: cover;
-    margin-top: 2.75rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 
