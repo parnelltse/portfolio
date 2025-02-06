@@ -1,23 +1,28 @@
 .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 50vh;
+    text-align: center;
+}
+
+.linkWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
 }
 
 .yoda {
     --timing: 400ms;
     --rotation: 20deg;
-
-    width: 300px;
-    /* Make the card wider */
-    height: 350px;
-    /* Adjust height to make it not too tall */
+    
+    width: 400px;
+    height: 450px;
     position: relative;
     transform-style: preserve-3d;
     transition: rotate var(--timing) ease, transform var(--timing);
     border-radius: 10px;
-    /* Optional: Add rounded corners for a smoother look */
+    overflow: hidden; /* Ensures text stays within */
 }
 
 .yoda:hover {
@@ -27,17 +32,13 @@
 /* Background Image */
 .bgImage {
     object-fit: cover;
-    /* Ensures the image is fully visible without cropping */
     object-position: center;
     z-index: 1;
     position: absolute;
-    /* Ensures the background fits inside the container */
     top: 0;
     left: 0;
     width: 100%;
-    /* Full width of the card */
     height: 100%;
-    /* Full height of the card */
 }
 
 /* Front Image */
@@ -50,18 +51,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    /* Full width of the card */
     height: 100%;
-    /* Full height of the card */
 }
 
 .yoda:hover .frontImage {
     opacity: 1;
     transform: translateY(-10px) translateZ(10px);
 }
-
-/* Logo */
-
 
 /* Overlay */
 .overlay {
@@ -97,20 +93,20 @@
     border: none;
     background: none;
     cursor: pointer;
-    /* Ensures the card looks like a clickable button */
 }
 
+/* Text inside the card, positioned at the bottom */
 .text {
     position: absolute;
-    bottom: 10px;
-    /* Position text at the bottom */
+    bottom: 10px; /* Places text at the bottom */
     left: 50%;
     transform: translateX(-50%);
-    color: white;
-    /* Adjust text color as needed */
-    font-size: 1.2rem;
-    /* Adjust font size */
-    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(238, 238, 238);
     text-align: center;
-    z-index: 100;
+    z-index: 10;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds contrast for readability */
+    padding: 5px 0;
+    font-family: 'Poppins', sans-serif;
 }

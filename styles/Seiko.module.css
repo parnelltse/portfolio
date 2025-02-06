@@ -58,7 +58,7 @@
 .imageContainer2 {
     width: 100%;
     /* Make the container take up the full width of its parent */
-    height: 675px;
+    height: auto;
     overflow: hidden;
     /* Ensure no part of the image overflows the container */
     position: relative;

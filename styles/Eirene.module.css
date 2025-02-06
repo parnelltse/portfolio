@@ -52,7 +52,7 @@
 
 .imageContainer2{
     width: 100%; /* Make the container take up the full width of its parent */
-    height: 600px; 
+    height: auto; 
     overflow: hidden; /* Ensure no part of the image overflows the container */
     position: relative; /* Allow the image to align within the container */
     display: flex; /* Center the image */

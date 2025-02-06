@@ -33,6 +33,17 @@ const Body = () => {
           {roles[roleIndex]}
         </span>
       </div>
+      <div className={styles.featureText}>
+        <p>Featured Work</p>
+      </div>
+      <div className={styles.feature}>
+      <CardButton
+            link="/aether"
+            bgImage="/iphon163.png"
+            frontImage="/iphone162.png"
+            text="Streamlining paperwork for caregivers to reduce administrative burden and improve efficiency"
+          />
+      </div>
       <div className={styles.cool}>
         <p>Cool stuff I've worked on</p>
       </div>

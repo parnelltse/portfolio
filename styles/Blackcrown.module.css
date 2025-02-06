@@ -43,7 +43,7 @@
 .imageContainer {
     width: 100%;
     /* Make the container take up the full width of its parent */
-    height: 400px;
+    height: auto;
     /* Set the desired height for the container */
     overflow: hidden;
     /* Ensure no part of the image overflows the container */
