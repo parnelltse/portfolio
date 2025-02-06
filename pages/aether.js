@@ -12,28 +12,28 @@ export default function Aether() {
         <main>
           <div className={styles.imageContainer2}>
             <Image
-              src="/aether1.png"
+              src="/a1.png"
               alt="Eirene Magazine Cover"
               width={825}
               height={600}
               className={styles.mag}
             />
             <Image
-              src="/aether2.png"
+              src="/a2.png"
               alt="Eirene Magazine Cover"
               width={825}
               height={600}
               className={styles.mag}
             />
             <Image
-              src="/aether3.png"
+              src="/a3.png"
               alt="Eirene Magazine Cover"
               width={825}
               height={600}
               className={styles.mag}
             />
             <Image
-              src="/aether4.png"
+              src="/a4.png"
               alt="Eirene Magazine Cover"
               width={825}
               height={600}
