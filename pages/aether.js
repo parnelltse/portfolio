@@ -107,14 +107,14 @@ export default function Aether() {
             </p>
             <div className={styles.persona_img}>
               <Image
-                src="/primary.jpg"
+                src="/Primary.jpg"
                 alt="primary persona"
                 className={styles.persona_img2}
                 width={500} // Adjust size as needed
                 height={500}
               />
               <Image
-                src="/secondary.jpg"
+                src="/Secondary.jpg"
                 alt="secondary persona"
                 className={styles.persona_img2}
                 width={500} // Adjust size as needed
@@ -122,7 +122,7 @@ export default function Aether() {
               />
             </div>
             <h3 className={styles.journey}>User Journey</h3>
-            
+
           </div>
         </div>
       </main>
