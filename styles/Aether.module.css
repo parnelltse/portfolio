@@ -43,30 +43,67 @@
 }
 
 
-.imageContainer2{
-    width: 100%; /* Make the container take up the full width of its parent */
-    min-width: none;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.imageContainer2 {
+    width: 100%;
+    display: flex;
     background-color: #374735;
     align-items: center;
-    justify-items: center;
+    justify-content: center; /* Centers the image */
 }
 
 .mag {
-    width: 100%; 
-    max-width: 12rem;
+    width: 100%;
+    max-width: auto; /* Keep it from growing too large */
     height: auto;
-    object-fit: cover;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
+
 
 
 .content{
     margin-left: 20rem;
     margin-right: 20rem;
+}
+
+.problemSolution {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns them at the top */
+    gap: 10rem; /* Adds space between them */
+}
+
+.problem, .solution {
+    flex: 1; /* Ensures equal width */
+}
+
+.research_img {
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+    width: 100%; /* Ensures it fits in the container */
+}
+
+.research_img2 {
+    width: 100%; /* Adjust percentage as needed */
+    max-width: 50rem; /* Prevents it from getting too big */
+    height: auto;
+}
+
+.persona_img {
+    display: flex;
+    flex-direction: row; /* Align images in a row */
+    justify-content: center; /* Center images */
+    align-items: center; /* Align them vertically */
+    gap: 3rem; /* Space between images */
+    width: 100%;
+    background-color: #374735;
+}
+
+.persona_img2 {
+    width: 30rem; /* Adjust size as needed */
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
