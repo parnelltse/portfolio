@@ -1,12 +1,4 @@
-.homeContainer {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-        url('/paper.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    max-width: none;
-}
+
 
 .title {
     font-weight: 600;
@@ -120,7 +112,7 @@
     margin-bottom: 1rem;
 }
 
-.flow_img, .midfi_img{
+.flow_img{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -129,16 +121,25 @@
     background-color: #374735;
 }
 
-.flow_img2, .lofi_img2, .midfi_img2, .palette_img{
+.flow_img2, .lofi_img2, .palette_img{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.palette, .lofi_img{
+.palette{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: #99755c;
+}
+
+
+.aetherproblem, .solution2, .process_sub, .conclude_head{
+    color: #374735;
+}
+
+.giver, .solution_2, .finalhead, .hifi1, .vis_design , .lofi, .midfi, .journey, .comp, .persona, .research{
+    color: #99755c;
 }

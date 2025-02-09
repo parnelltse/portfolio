@@ -122,15 +122,15 @@ export default function Aether() {
               />
             </div>
             <h3 className={styles.comp}>Competitive analysis</h3>
-              <p className={styles.analysis}>
-              Currently, there are apps that offer similar features. However, my team and I 
-              recognized an opportunity to focus on a specific audience, caregivers. 
-              While existing tools provided basic functionality, we aimed to design an app 
-              that was not only intuitive but also aligned with the specific needs of caregivers. 
-              Our focus was on crafting a user experience that felt thoughtful and seamless for those 
+            <p className={styles.analysis}>
+              Currently, there are apps that offer similar features. However, my team and I
+              recognized an opportunity to focus on a specific audience, caregivers.
+              While existing tools provided basic functionality, we aimed to design an app
+              that was not only intuitive but also aligned with the specific needs of caregivers.
+              Our focus was on crafting a user experience that felt thoughtful and seamless for those
               who use it.
-              </p>
-              <div className={styles.compAnal}>
+            </p>
+            <div className={styles.compAnal}>
               <Image
                 src="/companal.png"
                 alt="secondary persona"
@@ -138,14 +138,14 @@ export default function Aether() {
                 width={700} // Adjust size as needed
                 height={525}
               />
-              </div>
-              <h3 className={styles.journey}>User Flow</h3>
-              <p className={styles.flow}>
-                The user flow is designed to guide caregivers through a seamless and intuitive process. By simplifying
-                tasks like uploading files, filling out forms, and reviewing information, this flow can help caregivers 
-                efficiently handle paperwork.
-              </p>
-              <div className={styles.flow_img}>
+            </div>
+            <h3 className={styles.journey}>User Flow</h3>
+            <p className={styles.flow}>
+              The user flow is designed to guide caregivers through a seamless and intuitive process. By simplifying
+              tasks like uploading files, filling out forms, and reviewing information, this flow can help caregivers
+              efficiently handle paperwork.
+            </p>
+            <div className={styles.flow_img}>
               <Image
                 src="/flow.png"
                 alt="User Flow"
@@ -153,57 +153,140 @@ export default function Aether() {
                 width={900} // Adjust size as needed
                 height={275}
               />
-              </div>
-              <h3 className={styles.lofi}> Low Fidelity Wireframes</h3>
-              <p className={styles.lofi_content}>
-              With our research complete and key features identified, 
-              we transitioned into the design phase. Using low-fidelity wireframes, we prioritize accessibility and layout 
-              creating a clear framework for the app. 
-              </p>
+            </div>
+            <h3 className={styles.lofi}> Low Fidelity Wireframes</h3>
+            <p className={styles.lofi_content}>
+              With our research complete and key features identified,
+              we transitioned into the design phase. Using low-fidelity wireframes, we prioritize accessibility and layout
+              creating a clear framework for the app.
+            </p>
 
-              <div className={styles.lofi_img}>
-              <Image
-                src="/lofi.png"
-                alt="Low Fidelity Wireframes"
-                className={styles.lofi_img2}
-                width={1100} // Adjust size as needed
-                height={235}
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "1rem", paddingBottom: "1rem", backgroundColor: "#99755c" }}>
+              <iframe
+                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "900px", height: "550px" }}
+                src="https://embed.figma.com/design/wx1RABSScHZ6qZIt72YoDL/case-study?node-id=39-9915&embed-host=share"
+                allowFullScreen
               />
-              </div>
+            </div>
 
-              <h3 className={styles.midfi}> Mid Fidelity Wireframes</h3>
-              <p className={styles.midfi_content}>
-             With our low fidelity wireframes complete, my team and I were able to start putting more content into the 
-             wireframes, starting the mid fidelity design. During this stage, we kept the initial layout the same and 
-             added content and details to the design. We focused on keeping the design user-centric and started to implement 
-             screens to see what the app will look like with functionality.
-              </p>
+            <h3 className={styles.midfi}> Mid Fidelity Wireframes</h3>
+            <p className={styles.midfi_content}>
+              With our low fidelity wireframes complete, my team and I were able to start putting more content into the
+              wireframes, starting the mid fidelity design. During this stage, we kept the initial layout the same and
+              added content and details to the design. We focused on keeping the design user-centric and started to implement
+              screens to see what the app will look like with functionality.
+            </p>
 
-              <div className={styles.midfi_img}>
-              <Image
-                src="/midfi.png"
-                alt="Mid Fidelity Wireframes"
-                className={styles.midfi_img2}
-                width={1200} // Adjust size as needed
-                height={795}
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "1rem", paddingBottom: "1rem", backgroundColor: "#374735" }}>
+              <iframe
+                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "900px", height: "550px" }}
+                src="https://embed.figma.com/design/wx1RABSScHZ6qZIt72YoDL/case-study?node-id=0-1&embed-host=share"
+                allowFullScreen
               />
-              </div>
+            </div>
 
-              <h3 className={styles.vis_design}>Visual Design Systtem</h3>
-              <p className={styles.vis_design_content}>
-             After finishing the mid fidelity wireframes, the team and I started our visual design of the app with 
-             the goal of providing a sense trust, reliability, and calmness. With that, we 
-             chose our colour palette and font for the app.
-              </p>
-              <div className={styles.palette}>
+
+            <h3 className={styles.vis_design}>Visual Design System</h3>
+            <p className={styles.vis_design_content}>
+              After finishing the mid fidelity wireframes, the team and I started our visual design of the app with
+              the goal of providing a sense trust, reliability, and calmness. With that, we chose our colour palette
+              and font for the app.
+            </p>
+            <div className={styles.palette}>
               <Image
                 src="/palette.png"
                 alt="Visual Design"
                 className={styles.palette_img}
-                width={925} // Adjust size as needed
-                height={430}
+                width={700} // Adjust size as needed
+                height={330}
               />
-              </div>
+            </div>
+
+            <h3 className={styles.hifi1}>High Fidelity Wireframes and Prototype</h3>
+            <p className={styles.hifi1_content}>
+              With the visual design process complete, my team and I startetd crafting
+              the initial high-fidelity version of the app. This version served as a testing
+              ground, allowing us to gather valuable feedback from users. We then incorporated the feedback
+              from the users to refine and perfect the app.
+            </p>
+
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "1rem", paddingBottom: "1rem", backgroundColor: "#374735" }}>
+              <iframe
+                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "900px", height: "550px" }}
+                src="https://embed.figma.com/design/wx1RABSScHZ6qZIt72YoDL/case-study?node-id=1-3721&embed-host=share"
+                allowFullScreen
+              />
+            </div>
+
+            <h3 className={styles.hifi1}>Final High Fidelity Wireframes and Prototype</h3>
+            <p className={styles.hifi1_content}>
+              After getting the prototype tested and validated, we found areas that needed adjustment in the app.
+              The users found the intial prototype too blue. With a lack of contrast, some users found it difficult
+              to find certain buttons. The users also said some screens looked out-of-date, recommending that we
+              give the app a more modern facelift. For the final design, we decided to have a lighter background
+              and more contrasting buttons but still keeping our initial colour palette. We also added a more modern
+              design onto some of the pages while still keeping the accessibility and user-centric design in mind.
+              When validating the app again, users found the accessibility of the app much better and the modern touch
+              to it much more pleasing to the eye.
+
+            </p>
+
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "1rem", paddingBottom: "1rem", backgroundColor: "#99755c" }}>
+              <iframe
+                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "900px", height: "550px" }}
+                src="https://embed.figma.com/design/wx1RABSScHZ6qZIt72YoDL/case-study?node-id=1-15138&embed-host=share"
+                allowFullScreen
+              />
+            </div>
+          </div>
+          <div className={styles.conclude}>
+            <h2 className={styles.conclude_head}>
+              Final Thoughts and Reflection
+            </h2>
+            <h3 className={styles.finalhead}>
+              Key Learnings:
+            </h3>
+            <ul>
+              <li><strong>User-centric design is essential: </strong> 
+               The feedback from user testing highlighted the importance of 
+              designing with the end-user in mind. Their feedback and insights were 
+              what shaped the app into something that addresses the caregivers needs.</li>
+              <li><strong>Accessibility matters: </strong> 
+                Ensuring the app was accesible and easy to navigate was curcial. 
+              The adjustments made on user feedback significantly improved user experience.</li>
+              <li><strong>Balancing aesthetic and Functionality: </strong>
+              While designing an eye pleasing app was important, it was equally as important maintian 
+              the functionality and accessiblity of the app.</li>
+            </ul>
+            <h3 className={styles.finalhead}>
+              Areas for Improvement:
+              
+            </h3>
+            <ul>
+                <li><strong>Expand user testing: </strong>
+                Conducting more extensive user testing with a more diverse group 
+                of caregivers could uncover additional pain points.</li>
+                <li><strong>Microinteractions: </strong>
+                Incorporating some sublte microinteractions can make the app feel more responsive and engaging.</li>
+              </ul>
+              <h3 className={styles.finalhead}>Reflection:</h3>
+            <p className={styles.conclude_content}>
+              My time working on Aether was a great experience that allowed me to grow as a designer, developer, and marketer. 
+              I gained valuable insights into cross-functional collaboration with multiple teams, navigating challenges, and 
+              designing and developing a successful product. While the development of the app was successful, it was not without
+              and setbacks.
+              <ul>
+                <li>Effective communication is important when it come to fostering a collaborative environment.</li>
+                <li>Adaptability is essential, as projects often evolve and flexibility is required in order to adjust 
+                  for the obstacles.</li>
+                  <li>Desgin is an interative process, and adjustments are a natural part of refining and developing a good user experience</li>
+                  <li>Having fun in the creative process is just as important as achieving the end result.</li>
+              </ul>
+              These takeaways have not only helped me hone my skills as a designer and team member, it also 
+              let me experience and show my appreciation for product development.
+            </p>
+  
+
           </div>
         </div>
       </main>
