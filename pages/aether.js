@@ -71,7 +71,7 @@ export default function Aether() {
             </div>
             <div className={styles.solution}>
               <h2 className={styles.solution2}>The solution</h2>
-              <h3 className={styles.solution_2}>Aether, an AI powered app to help caregivers.</h3>
+              <h3 className={styles.solution_2}>Aether, an AI powered app to help caregivers witth paperwork.</h3>
               <p className={styles.ae_solution}>
                 To address caregivers' paperwork challenges, my team and I developed <strong>Aether</strong> an app that combines intuitive
                 UX/UI design with AI technology to streamline paperwork. Using Optical Image Recognition and GPT-4, it simplifies complex
@@ -121,8 +121,89 @@ export default function Aether() {
                 height={500}
               />
             </div>
-            <h3 className={styles.journey}>User Journey</h3>
+            <h3 className={styles.comp}>Competitive analysis</h3>
+              <p className={styles.analysis}>
+              Currently, there are apps that offer similar features. However, my team and I 
+              recognized an opportunity to focus on a specific audience, caregivers. 
+              While existing tools provided basic functionality, we aimed to design an app 
+              that was not only intuitive but also aligned with the specific needs of caregivers. 
+              Our focus was on crafting a user experience that felt thoughtful and seamless for those 
+              who use it.
+              </p>
+              <div className={styles.compAnal}>
+              <Image
+                src="/companal.png"
+                alt="secondary persona"
+                className={styles.compAnal2}
+                width={700} // Adjust size as needed
+                height={525}
+              />
+              </div>
+              <h3 className={styles.journey}>User Flow</h3>
+              <p className={styles.flow}>
+                The user flow is designed to guide caregivers through a seamless and intuitive process. By simplifying
+                tasks like uploading files, filling out forms, and reviewing information, this flow can help caregivers 
+                efficiently handle paperwork.
+              </p>
+              <div className={styles.flow_img}>
+              <Image
+                src="/flow.png"
+                alt="User Flow"
+                className={styles.flow_img2}
+                width={900} // Adjust size as needed
+                height={275}
+              />
+              </div>
+              <h3 className={styles.lofi}> Low Fidelity Wireframes</h3>
+              <p className={styles.lofi_content}>
+              With our research complete and key features identified, 
+              we transitioned into the design phase. Using low-fidelity wireframes, we prioritize accessibility and layout 
+              creating a clear framework for the app. 
+              </p>
 
+              <div className={styles.lofi_img}>
+              <Image
+                src="/lofi.png"
+                alt="Low Fidelity Wireframes"
+                className={styles.lofi_img2}
+                width={1100} // Adjust size as needed
+                height={235}
+              />
+              </div>
+
+              <h3 className={styles.midfi}> Mid Fidelity Wireframes</h3>
+              <p className={styles.midfi_content}>
+             With our low fidelity wireframes complete, my team and I were able to start putting more content into the 
+             wireframes, starting the mid fidelity design. During this stage, we kept the initial layout the same and 
+             added content and details to the design. We focused on keeping the design user-centric and started to implement 
+             screens to see what the app will look like with functionality.
+              </p>
+
+              <div className={styles.midfi_img}>
+              <Image
+                src="/midfi.png"
+                alt="Mid Fidelity Wireframes"
+                className={styles.midfi_img2}
+                width={1200} // Adjust size as needed
+                height={795}
+              />
+              </div>
+
+              <h3 className={styles.vis_design}>Visual Design Systtem</h3>
+              <p className={styles.vis_design_content}>
+             After finishing the mid fidelity wireframes, the team and I started our visual design of the app with 
+             the goal of providing a sense trust, reliability, and calmness. With that, we 
+             chose our colour palette and font for the app.
+              </p>
+              <div className={styles.palette}>
+              <Image
+                src="/palette.png"
+                alt="Visual Design"
+                className={styles.palette_img}
+                width={925} // Adjust size as needed
+                height={430}
+              />
+              </div>
           </div>
         </div>
       </main>
