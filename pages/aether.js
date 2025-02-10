@@ -86,7 +86,9 @@ export default function Aether() {
             <h3 className={styles.research}>Research</h3>
             <p className={styles.research_content}>
               To get a better understanding of the target audience, I conducted research with caregivers who will use the
-              app. Through talking with them and using surveys, I found that caregivers thought forms and paperwork were:
+              app. The methods used to gather information were interviews and surveys. From the research, I found three major 
+              pain points. Caregivers thought paperwork was: 
+             
             </p>
             <div className={styles.research_img}>
               <Image
@@ -98,6 +100,14 @@ export default function Aether() {
                 height={100}
               />
             </div>
+            <p className={styles.research_content}>
+              <ul>
+              <li>Caregivers often found complex wording and legal jargon difficult to understand, making it hard for them 
+              to fill out paperwork.</li>
+              <li>Many forms required the same type of information being filled out repetitively, making the process time consuming.</li>
+              <li>The sheer amount of forms they had to fill out and submit was stressful.</li>
+              </ul>
+            </p>
             <h3 className={styles.persona}>User Personas</h3>
             <p className={styles.persona_content}>
               Based on the research, I created two user personas. The primary persona is of a
@@ -139,6 +149,11 @@ export default function Aether() {
                 height={525}
               />
             </div>
+            <p>The competitor analysis found that many apps on the market can help simplify complex language and jargon. However,
+              those apps <strong>did not allow their users to directly edit and input information into the paperwork.</strong> Additionally, 
+              the apps <strong>did not have a very intuitive interface.</strong> The one that did have a simple and intuitive interface was 
+             <strong> lacking in functionality and missing several key features.</strong> 
+            </p>
             <h3 className={styles.journey}>User Flow</h3>
             <p className={styles.flow}>
               The user flow is designed to guide caregivers through a seamless and intuitive process. By simplifying
@@ -156,40 +171,51 @@ export default function Aether() {
             </div>
             <h3 className={styles.lofi}> Low Fidelity Wireframes</h3>
             <p className={styles.lofi_content}>
-              With our research complete and key features identified,
-              we transitioned into the design phase. Using low-fidelity wireframes, we prioritize accessibility and layout
-              creating a clear framework for the app.
+             After completing the research and identifying the key pain points and needs for caregivers, 
+             it became clear the app must be centered around its usability and accessibility. Caregivers 
+             often work under high levels of stress and timeconstrains, so the app needed to be intuitive, easy-to-navigate, 
+             and inclusive to users with different levels of technical literacy. This led us to focus on <strong>accessibility </strong> 
+             and <strong> layout </strong> during our low fidelity wireframe.
             </p>
 
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "1rem", paddingBottom: "1rem", backgroundColor: "#99755c" }}>
               <iframe
-                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "900px", height: "550px" }}
+                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "1000px", height: "650px" }}
                 src="https://embed.figma.com/design/wx1RABSScHZ6qZIt72YoDL/case-study?node-id=39-9915&embed-host=share"
                 allowFullScreen
               />
             </div>
-
             <h3 className={styles.midfi}> Mid Fidelity Wireframes</h3>
             <p className={styles.midfi_content}>
-              With our low fidelity wireframes complete, my team and I were able to start putting more content into the
-              wireframes, starting the mid fidelity design. During this stage, we kept the initial layout the same and
-              added content and details to the design. We focused on keeping the design user-centric and started to implement
-              screens to see what the app will look like with functionality.
+              With our low fidelity wireframes complete, my team and I were able to started the mid fidelity 
+              wireframe design phase. During this stage, we built upon the accessibility and layout principles, while 
+              incorporating more detailed content. 
             </p>
 
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "1rem", paddingBottom: "1rem", backgroundColor: "#374735" }}>
               <iframe
-                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "900px", height: "550px" }}
+                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "1000px", height: "650px" }}
                 src="https://embed.figma.com/design/wx1RABSScHZ6qZIt72YoDL/case-study?node-id=0-1&embed-host=share"
                 allowFullScreen
               />
             </div>
-
+              <p>
+                We chose to maintain the initial layout from the low fidelity wireframe.
+                <ul>
+                  <li><strong>Consistencty: </strong> The layout was designed to prioritize accessibility and 
+                  ease of use, so keeping it consistent ensured that caregivers could navigate the app easily.</li>
+                  <li><strong>Focus on content: </strong> By keeping the layout unchanged we can focus on adding 
+                  more detailed content such as input fields, overlays, and icons.</li>
+                  <li><strong>Visual heiarchy: </strong> Using typography, spacing, and visual elements, 
+                  we created a clear hierarchy of information. This ensured that the most important features and 
+                  content were the focus, making the app easier to navigate. </li>
+                </ul>
+              </p>
 
             <h3 className={styles.vis_design}>Visual Design System</h3>
             <p className={styles.vis_design_content}>
               After finishing the mid fidelity wireframes, the team and I started our visual design of the app with
-              the goal of providing a sense trust, reliability, and calmness. With that, we chose our colour palette
+              the goal of providing a sense of trust, reliability, and calmness. With that, we chose our colour palette
               and font for the app.
             </p>
             <div className={styles.palette}>
@@ -201,40 +227,62 @@ export default function Aether() {
                 height={330}
               />
             </div>
+            <p>
+              The soft neutral background (#F2F2F7) ensures clarity, and the use of blue tones (#137FA5)
+              and gradient (#71AFCE to #5B8399) promotes a calming, yet professional aesthetic. <br/> The font 
+              DM Sans was chosen due to it being a sans-serif font with soft rounded edges that convey trust, 
+              reliability, and calmness. DM Sans has high readability and balanced proportions, making it the 
+              ideal font for this app.
+            </p>
 
-            <h3 className={styles.hifi1}>High Fidelity Wireframes and Prototype</h3>
+            <h3 className={styles.hifi1}>Initial High Fidelity Wireframes</h3>
             <p className={styles.hifi1_content}>
-              With the visual design process complete, my team and I startetd crafting
-              the initial high-fidelity version of the app. This version served as a testing
+              With the visual design process complete, my team and I started crafting
+              the initial high-fidelity version of the app. This version included detailed visuals, such as colors,
+               typography, icons, and interactive elements, to create the look for the final product.This version 
+               served as a testing
               ground, allowing us to gather valuable feedback from users. We then incorporated the feedback
               from the users to refine and perfect the app.
             </p>
 
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "1rem", paddingBottom: "1rem", backgroundColor: "#374735" }}>
               <iframe
-                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "900px", height: "550px" }}
+                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "1000px", height: "650px" }}
                 src="https://embed.figma.com/design/wx1RABSScHZ6qZIt72YoDL/case-study?node-id=1-3721&embed-host=share"
                 allowFullScreen
               />
             </div>
 
-            <h3 className={styles.hifi1}>Final High Fidelity Wireframes and Prototype</h3>
+            <p>These wireframes serve as a realistic representation of what our app would look like and how it would 
+              function. This gave users a clear and accurate sense of how the app will work in real life. <br/>
+              The high fidelity wireframes were used as a dynamic tool to allow us to iterate after testing. 
+            </p>
+
+            <h3 className={styles.hifi1}>Final High Fidelity Wireframes</h3>
             <p className={styles.hifi1_content}>
               After getting the prototype tested and validated, we found areas that needed adjustment in the app.
-              The users found the intial prototype too blue. With a lack of contrast, some users found it difficult
-              to find certain buttons. The users also said some screens looked out-of-date, recommending that we
-              give the app a more modern facelift. For the final design, we decided to have a lighter background
-              and more contrasting buttons but still keeping our initial colour palette. We also added a more modern
-              design onto some of the pages while still keeping the accessibility and user-centric design in mind.
-              When validating the app again, users found the accessibility of the app much better and the modern touch
+              The users found the intial prototype too blue. With a <strong> lack of contrast</strong>, some users found it difficult
+              to find and read certain text. The users also said some screens <strong> looked out-of-date</strong>, recommending that we
+              give the app a more modern facelift. For the final design, we decided to have a <strong> lighter background </strong>
+              and <strong> more contrasting buttons</strong> but still keeping our initial colour palette. We also added a more modern
+              design onto some of the pages while still <strong> keeping the accessibility and user-centric design in mind. </strong>
+              When validating the app again using <strong> A/B testing</strong>, users found the accessibility of the app much better and the modern touch
               to it much more pleasing to the eye.
 
             </p>
 
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "1rem", paddingBottom: "1rem", backgroundColor: "#99755c" }}>
               <iframe
-                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "900px", height: "550px" }}
+                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "1000px", height: "650px" }}
                 src="https://embed.figma.com/design/wx1RABSScHZ6qZIt72YoDL/case-study?node-id=1-15138&embed-host=share"
+                allowFullScreen
+              />
+            </div>
+            <h3 className={styles.hifi1}>Test out the Prototype</h3>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "1rem", paddingBottom: "1rem", backgroundColor: "#374735" }}>
+              <iframe
+                style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "1000px", height: "650px" }}
+                src="https://embed.figma.com/proto/wx1RABSScHZ6qZIt72YoDL/case-study?node-id=1-15800&p=f&scaling=scale-down&content-scaling=fixed&page-id=1%3A15138&starting-point-node-id=1%3A16070&embed-host=share" 
                 allowFullScreen
               />
             </div>
