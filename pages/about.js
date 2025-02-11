@@ -7,7 +7,9 @@ export default function About() {
   return (
     <div className={styles.homeContainer}>
       <Header />
-      <main></main>
+      <main>
+        <p>COMING SOON!</p>
+      </main>
       <Footer />
     </div>
   );
