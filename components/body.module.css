@@ -3,10 +3,11 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    min-height: 100vh;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Full viewport height */
     margin-top: 5rem;
+    text-align: center; /* Ensures text alignment */
 }
 
 .heading {
@@ -17,14 +18,12 @@
 
 .roleContainer {
     margin-top: 1rem;
-    height: auto;
-    /* Allow the container to adjust to the content */
     min-height: 4rem;
-    /* Set a minimum height to keep it visually consistent */
     max-height: 10rem;
-    /* Optional: Limit height if needed */
     overflow: hidden;
-    /* Keep text within the bounds */
+    display: flex;
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
 }
 
 .role {
@@ -34,19 +33,22 @@
     display: inline-block;
     animation: fade 3s ease-in-out infinite;
     white-space: nowrap;
-    /* Prevent wrapping, optional */
 }
 
-
+/* Increase heading size */
 .heading {
     font-size: 4rem;
 }
 
+/* Center grid items */
 .griddy {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
+    place-items: center; /* Centers grid items */
+    width: 100%; /* Ensures it spans full width */
+    max-width: 1200px; /* Optional: Limit width */
 }
 
 /* Keyframe animation */

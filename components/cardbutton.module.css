@@ -12,21 +12,40 @@
     text-decoration: none;
 }
 
-.yoda {
-    --timing: 400ms;
-    --rotation: 20deg;
-    
-    width: 400px;
-    height: 450px;
-    position: relative;
+.cardButton {
+    border: 2px solid #333; /* Added border around everything */
+    border-radius: 12px; /* Rounded corners for a cohesive look */
+    background: white; /* Ensures a consistent background */
+    cursor: pointer;
+    width: 400px; /* Fixed width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden; /* Ensures nothing spills out */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
     transform-style: preserve-3d;
-    transition: rotate var(--timing) ease, transform var(--timing);
-    border-radius: 10px;
-    overflow: hidden; /* Ensures text stays within */
+    transition: rotate 400ms ease, transform 400ms;
 }
 
-.yoda:hover {
-    rotate: x var(--rotation);
+/* Apply the hover effect when hovering anywhere on the card */
+.cardButton:hover {
+    rotate: x 20deg;
+}
+
+.cardButton:hover .imageContainer {
+    rotate: x 20deg;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 300px; /* Fixed height for the image container */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: rotate 400ms ease, transform 400ms;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the image stays within the container */
+    margin-top: 1rem;
 }
 
 /* Background Image */
@@ -46,7 +65,7 @@
     object-fit: contain;
     opacity: 0;
     z-index: 2;
-    transition: opacity var(--timing), transform var(--timing);
+    transition: opacity 400ms, transform 400ms;
     position: absolute;
     top: 0;
     left: 0;
@@ -54,7 +73,8 @@
     height: 100%;
 }
 
-.yoda:hover .frontImage {
+/* Make front image visible when hovering anywhere on the card */
+.cardButton:hover .frontImage {
     opacity: 1;
     transform: translateY(-10px) translateZ(10px);
 }
@@ -66,10 +86,11 @@
     z-index: 100;
     background-image: radial-gradient(circle, transparent 55px, black);
     opacity: 0;
-    transition: opacity var(--timing);
+    transition: opacity 400ms;
 }
 
-.yoda:hover .overlay {
+/* Make overlay visible when hovering anywhere on the card */
+.cardButton:hover .overlay {
     opacity: 1;
 }
 
@@ -81,32 +102,48 @@
     background: black;
     filter: blur(2.5rem);
     z-index: 1;
-    transition: rotate var(--timing), translate var(--timing);
+    transition: rotate 400ms ease, translate 400ms;
 }
 
-.yoda:hover .shadow {
-    rotate: x calc(var(--rotation) * -1);
+/* Apply shadow effect when hovering anywhere on the card */
+.cardButton:hover .shadow {
+    rotate: x -20deg;
     translate: 0 20px;
 }
 
-.cardButton {
-    border: none;
-    background: none;
-    cursor: pointer;
+/* Text Container */
+.textContainer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0; /* Adds padding around the text */
 }
 
-/* Text inside the card, positioned at the bottom */
 .text {
-    position: absolute;
-    bottom: 10px; /* Places text at the bottom */
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 1rem;
-    color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0); /* Change text color as needed */
     text-align: center;
-    z-index: 10;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Adds contrast for readability */
-    padding: 5px 0;
+    margin: 0; /* Removes default margin */
     font-family: 'Poppins', sans-serif;
 }
+
+/* Category Container */
+.categoryContainer {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0; /* Adds spacing above */
+}
+
+.category {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555; /* Slightly muted color */
+    letter-spacing: 1px;
+}
+
+.card:hover {
+    cursor: url(https://cur.cursors-4u.net/games/gam-4/gam307.ani), 
+           url(https://cur.cursors-4u.net/games/gam-4/gam307.png), 
+           auto !important;
+  }
+

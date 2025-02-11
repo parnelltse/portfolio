@@ -8,19 +8,18 @@ const Body = () => {
 
   // List of roles to animate
   const roles = [
-    "I am a UX/UI & Graphic Designer",
-    "I am a problem solver",
-    "I am driven by curiosity",
-    "I love pizza",
-    "I am a croissant connoisseur",
-    "I enjoy watching Formula 1",
-    "I love helping out in the community",
+    "Pizza Lover 🍕",
+    "Croissant Connoisseur 🥐",
+    "Curious Thinker 🧠",
+    "Martial Artist 🥋",
+    "Formula 1 Enthusiast 🏎️"
+
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
-    }, 3000); // Change every 3 seconds
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, [roles.length]);
@@ -28,6 +27,8 @@ const Body = () => {
   return (
     <main className={styles.container}>
       <h1 className={styles.heading}>Hi! My name is Parnell</h1>
+      <h2 className={styles.heading2}>I am a UX/UI and Brand Designer</h2>
+      <h2 className={styles.heading2}>I am also a...</h2>
       <div className={styles.roleContainer}>
         <span className={styles.role} key={roleIndex}>
           {roles[roleIndex]}
@@ -36,40 +37,44 @@ const Body = () => {
       <div className={styles.featureText}>
         <p>Featured Work</p>
       </div>
-      <div className={styles.feature}>
+      <div className={styles.card}>
       <CardButton
             link="/aether"
             bgImage="/iphon163.png"
             frontImage="/iphone162.png"
             text="Streamlining paperwork for caregivers to reduce administrative burden and improve efficiency"
+            category="Case Study - Mobile App"
           />
       </div>
       <div className={styles.cool}>
         <p>Cool stuff I've worked on</p>
       </div>
       <div className={styles.griddy}>
-        <div>
+        <div className={styles.card}>
           <CardButton
             link="/eirene"
             bgImage="/mag mock cover.png"
             frontImage="/bath.png"
             text="Interior Design Magazine"
+            category="Editorial Design - Magazine"
           />
         </div>
-        <div>
+        <div className={styles.card}>
           <CardButton
             link="/blackcrown"
             bgImage="/reddie.png"
             frontImage="/123.png"
             text="Drink Design and Mockups"
+            category="Graphic Design - Brand Mockup"
           />
         </div>
-        <div>
+        <div className={styles.card}>
           <CardButton
             link="/seiko"
             bgImage="/seiko 2.png"
             frontImage="/seiko3.png"
             text="Seiko Watch Ad"
+            category="Graphic Design - Advertisement"
           />
         </div>
       </div>

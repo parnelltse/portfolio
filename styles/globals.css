@@ -1,5 +1,12 @@
 body {
   font-family: 'Poppins', sans-serif;
- 
 
+}
+
+html, body {
+  cursor: url(https://cur.cursors-4u.net/games/gam-4/gam308.cur), auto !important;
+}
+
+* {
+  cursor: inherit !important;  /* Inherit from html and body */
 }
