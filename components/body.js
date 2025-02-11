@@ -27,17 +27,17 @@ const Body = () => {
     <main className={styles.container}>
       <h1 className={styles.heading}>Hi! My name is Parnell</h1>
       <h2 className={styles.heading2}>
-        I’m a UX/UI and Brand Designer—basically, I’m the creative wizard who
-        turns ideas into beautiful, user-friendly experiences.
+        I’m a UX/UI and Brand Designer. Basically, I’m the wizard who turns
+        ideas into creative, user-friendly experiences.
       </h2>
-      <h2 className={styles.heading2}>I am also a...</h2>
+      <h2 className={styles.heading3}>I am also a...</h2>
       <div className={styles.roleContainer}>
         <span className={styles.role} key={roleIndex}>
           {roles[roleIndex]}
         </span>
       </div>
       <div className={styles.featureText}>
-        <p>Featured Work</p>
+        <p className={styles.feature_text}>Featured Work</p>
       </div>
       <div className={styles.card}>
         <CardButton
@@ -49,7 +49,7 @@ const Body = () => {
         />
       </div>
       <div className={styles.cool}>
-        <p>Cool stuff I've worked on</p>
+        <p className={styles.feature_text}>Cool stuff I've worked on</p>
       </div>
       <div className={styles.griddy}>
         <div className={styles.card}>

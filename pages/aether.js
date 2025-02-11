@@ -211,7 +211,7 @@ export default function Aether() {
             </p>
             <h3 className={styles.journey}>User Flow</h3>
             <p className={styles.persona_content}>
-              Getting from point A to Point B with no roadbumps.
+              From start to finish with no roadbumps.
             </p>
             <p className={styles.flow}>
               The user flow is designed to guide caregivers through a seamless
@@ -229,15 +229,16 @@ export default function Aether() {
               />
             </div>
             <h3 className={styles.lofi}> Low Fidelity Wireframes</h3>
+            <p className={styles.persona_content}>
+              Designing around usability and accessbility.
+            </p>
             <p className={styles.lofi_content}>
               After completing the research and identifying the key pain points
               and needs for caregivers, it became clear the app must be centered
               around its usability and accessibility. Caregivers often work
-              under high levels of stress and timeconstrains, so the app needed
-              to be intuitive, easy-to-navigate, and inclusive to users with
-              different levels of technical literacy. This led us to focus on{" "}
-              <strong>accessibility </strong>
-              and <strong> layout </strong> during our low fidelity wireframe.
+              under high levels of stress and time constraints, so the app
+              needed to be intuitive, easy-to-navigate, and inclusive to users
+              with different levels of technical literacy.
             </p>
 
             <div
@@ -260,11 +261,15 @@ export default function Aether() {
               />
             </div>
             <h3 className={styles.midfi}> Mid Fidelity Wireframes</h3>
+            <p className={styles.persona_content}>
+              Building upon the accessibility and layout of the app.
+            </p>
+
             <p className={styles.midfi_content}>
-              With our low fidelity wireframes complete, my team and I were able
-              to started the mid fidelity wireframe design phase. During this
-              stage, we built upon the accessibility and layout principles,
-              while incorporating more detailed content.
+              The feedback on the low fidelity wireframes were positive and
+              caregivers thought the design was intuitive to use. With that, the
+              mid fidelity wireframes began. The focus was on adding content to
+              it while keeping the layout the same.
             </p>
 
             <div
@@ -287,8 +292,8 @@ export default function Aether() {
               />
             </div>
             <p>
-              We chose to maintain the initial layout from the low fidelity
-              wireframe.
+              The decision was made to preserve the original layout in the low
+              fidelity wireframe for several reseaons:
               <ul>
                 <li>
                   <strong>Consistencty: </strong> The layout was designed to
@@ -298,8 +303,8 @@ export default function Aether() {
                 </li>
                 <li>
                   <strong>Focus on content: </strong> By keeping the layout
-                  unchanged we can focus on adding more detailed content such as
-                  input fields, overlays, and icons.
+                  unchanged it allows for a focus on adding more detailed
+                  content such as input fields, overlays, and icons.
                 </li>
                 <li>
                   <strong>Visual heiarchy: </strong> Using typography, spacing,
@@ -311,11 +316,15 @@ export default function Aether() {
             </p>
 
             <h3 className={styles.vis_design}>Visual Design System</h3>
+            <p className={styles.persona_content}>
+              Defining colours and typography for trust, reliability, and
+              calmness.
+            </p>
             <p className={styles.vis_design_content}>
-              After finishing the mid fidelity wireframes, the team and I
-              started our visual design of the app with the goal of providing a
-              sense of trust, reliability, and calmness. With that, we chose our
-              colour palette and font for the app.
+              With the completion and testing of the mid fidelity wireframes,
+              the visual design of the app started. The goal of the design
+              choices is to provide a sense of trust, reliability, and calmness.
+              With that, the colour palette and font choice was chosen
             </p>
             <div className={styles.palette}>
               <Image
@@ -327,24 +336,29 @@ export default function Aether() {
               />
             </div>
             <p>
-              The soft neutral background (#F2F2F7) ensures clarity, and the use
-              of blue tones (#137FA5) and gradient (#71AFCE to #5B8399) promotes
-              a calming, yet professional aesthetic. <br /> The font DM Sans was
-              chosen due to it being a sans-serif font with soft rounded edges
-              that convey trust, reliability, and calmness. DM Sans has high
-              readability and balanced proportions, making it the ideal font for
-              this app.
+              <ul>
+                <li>#F2F2F7 a soft colour to ensure clarity</li>
+                <li>
+                  #137FA5 and a gradient of #71AFCE to #5B8399 to promote a
+                  calming yet professional aesthetic
+                </li>
+                <li>
+                  DM sans being a sans-serif fot with soft rounded edges has
+                  high readblity and balanced proportions, making it ideal for
+                  the app.
+                </li>
+              </ul>
             </p>
 
             <h3 className={styles.hifi1}>Initial High Fidelity Wireframes</h3>
+            <p className={styles.persona_content}>
+              Implementing visual design but falling short.
+            </p>
             <p className={styles.hifi1_content}>
-              With the visual design process complete, my team and I started
-              crafting the initial high-fidelity version of the app. This
-              version included detailed visuals, such as colors, typography,
-              icons, and interactive elements, to create the look for the final
-              product.This version served as a testing ground, allowing us to
-              gather valuable feedback from users. We then incorporated the
-              feedback from the users to refine and perfect the app.
+              The intial version of the high fidelity wireframe and prototype
+              incorporated the colour palette and typography. This version
+              included detailed visuals, such as colors, typography, icons, and
+              interactive elements, to create the look for the final product.
             </p>
 
             <div
@@ -368,34 +382,37 @@ export default function Aether() {
             </div>
 
             <p>
-              These wireframes serve as a realistic representation of what our
-              app would look like and how it would function. This gave users a
-              clear and accurate sense of how the app will work in real life.{" "}
-              <br />
-              The high fidelity wireframes were used as a dynamic tool to allow
-              us to iterate after testing.
+              After testing:
+              <ul>
+                <li>
+                  <strong>Accessibility fell short: </strong> 60% of caregivers
+                  found that the text colour and background colour were too
+                  similair and made it hard to read.
+                </li>
+                <li>
+                  <strong> Visuals felt too outdated: </strong> Other designers
+                  that looked at the app felt like it looked too outdated.
+                </li>
+              </ul>
+              This iteration of the app served as a testing ground. The next
+              iteration of the app was designed with the feedback in mind.
             </p>
 
             <h3 className={styles.hifi1}>Final High Fidelity Wireframes</h3>
+            <p className={styles.persona_content}>
+              Iterating and learning from mistakes.
+            </p>
             <p className={styles.hifi1_content}>
-              After getting the prototype tested and validated, we found areas
-              that needed adjustment in the app. The users found the intial
-              prototype too blue. With a <strong> lack of contrast</strong>,
-              some users found it difficult to find and read certain text. The
-              users also said some screens <strong> looked out-of-date</strong>,
-              recommending that we give the app a more modern facelift. For the
-              final design, we decided to have a{" "}
-              <strong> lighter background </strong>
-              and <strong> more contrasting buttons</strong> but still keeping
-              our initial colour palette. We also added a more modern design
-              onto some of the pages while still{" "}
+              After taking in the feedback from the intial high fidelity
+              wireframes, improvements were made. For the final design, the
+              decision to have a <strong> lighter background </strong>
+              and <strong> more contrasting buttons</strong> made the app more
+              accesible. Adjustments to the pages of the app made it look more
+              modern while{" "}
               <strong>
                 {" "}
                 keeping the accessibility and user-centric design in mind.{" "}
               </strong>
-              When validating the app again using <strong> A/B testing</strong>,
-              users found the accessibility of the app much better and the
-              modern touch to it much more pleasing to the eye.
             </p>
 
             <div
@@ -417,7 +434,42 @@ export default function Aether() {
                 allowFullScreen
               />
             </div>
+            <p>The final results:</p>
+            <p>
+              <ul>
+                <li>
+                  <strong>A/B testing:</strong> Caregivers found the app much
+                  more accessible on the new iteration. Complaints about
+                  readability fell from 60% to 10%.
+                </li>
+                <li>
+                  <strong>Designer feedback:</strong> Designers thought the new
+                  iteration was much more pleasing to the eye and the
+                  accessbility and usability were still at the forefront of the
+                  design.
+                </li>
+              </ul>
+            </p>
+            <h3 className={styles.hifi1}>After using the app</h3>
+            <p className={styles.persona_content}>
+              Time to complete paperwork fell from 7 minutes to 4 minutes.
+            </p>
+            <p>
+              Without the Aether, the average time to fill out paperwork was 7
+              minutes for a single page. After having caregivers and many other
+              users use the app, time to fill out a single page of paperwork
+              fell to <strong>4 minutes, a drop of ~42%.</strong> Users
+              particularly liked the paraphrasing feature of the app which
+              simplifies complex wording making it easier to understand what
+              information is required. <br />
+              By cutting down on time spent on paperwork, Aether empowers
+              caregivers to work more efficiently, ultimately reducing burnout
+              and allowing them to focus on what matters most, high quality
+              caregiving.
+            </p>
+
             <h3 className={styles.hifi1}>Test out the Prototype</h3>
+            <p className={styles.persona_content}>Give the prototype a try! </p>
             <div
               style={{
                 display: "flex",

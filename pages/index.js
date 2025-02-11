@@ -4,7 +4,6 @@ import Footer from "../components/footer";
 import Body from "@/components/body";
 import styles from "../styles/Home.module.css";
 
-
 export default function Home() {
   return (
     <>
@@ -15,13 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.homeContainer}>
-        <div className={styles.background}>
-          <Header />
-          <main className={styles.content}>
-            <Body />
-          </main>
-          <Footer />
-        </div>
+        <Header />
+        <main className={styles.content}>
+          <Body />
+        </main>
+        <Footer />
       </div>
     </>
   );
