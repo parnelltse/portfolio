@@ -11,7 +11,7 @@ const Body = () => {
     "Pizza Lover 🍕",
     "Croissant Connoisseur 🥐",
     "Curious Thinker 🧠",
-    "Martial Arts Entthusiast 🥋",
+    "Martial Arts Enthusiast 🥋",
     "Formula 1 Enjoyer 🏎️",
   ];
 
@@ -26,7 +26,10 @@ const Body = () => {
   return (
     <main className={styles.container}>
       <h1 className={styles.heading}>Hi! My name is Parnell</h1>
-      <h2 className={styles.heading2}>I am a UX/UI and Brand Designer</h2>
+      <h2 className={styles.heading2}>
+        I’m a UX/UI and Brand Designer—basically, I’m the creative wizard who
+        turns ideas into beautiful, user-friendly experiences.
+      </h2>
       <h2 className={styles.heading2}>I am also a...</h2>
       <div className={styles.roleContainer}>
         <span className={styles.role} key={roleIndex}>
