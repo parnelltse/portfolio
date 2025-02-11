@@ -11,15 +11,14 @@ const Body = () => {
     "Pizza Lover 🍕",
     "Croissant Connoisseur 🥐",
     "Curious Thinker 🧠",
-    "Martial Artist 🥋",
-    "Formula 1 Enthusiast 🏎️"
-
+    "Martial Arts Entthusiast 🥋",
+    "Formula 1 Enjoyer 🏎️",
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
-    }, 3000); 
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [roles.length]);
@@ -38,13 +37,13 @@ const Body = () => {
         <p>Featured Work</p>
       </div>
       <div className={styles.card}>
-      <CardButton
-            link="/aether"
-            bgImage="/iphon163.png"
-            frontImage="/iphone162.png"
-            text="Streamlining paperwork for caregivers to reduce administrative burden and improve efficiency"
-            category="Case Study - Mobile App"
-          />
+        <CardButton
+          link="/aether"
+          bgImage="/iphon163.png"
+          frontImage="/iphone162.png"
+          text="Streamlining paperwork for caregivers to reduce administrative burden and improve efficiency"
+          category="Case Study - Mobile App"
+        />
       </div>
       <div className={styles.cool}>
         <p>Cool stuff I've worked on</p>
