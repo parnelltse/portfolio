@@ -1,9 +1,20 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
-    padding: 0 50rem;
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
 }
 
 .hello {
@@ -17,3 +28,30 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+.content_text {
+    max-width: 100%; 
+    overflow-wrap: break-word; 
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Change from center to flex-start */
+}
+
+
+.content_text2 {
+    margin-top: .5rem;
+    line-height: 1.6;
+}
+
+.obssesed {
+    width: 100%;  /* Take full width of parent */
+    max-width: 600px;  /* Adjust as needed */
+    text-align: left;
+    padding: 10px 0;  /* Add spacing */
+    list-style-position: inside;  /* Keep bullet points inside */
+    list-style: none;
+    
+}
+

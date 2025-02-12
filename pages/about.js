@@ -10,13 +10,13 @@ export default function About() {
       <Header />
       <main>
         <div className={styles.content}>
-          <h2 className={styles.hello}>Hey Hi Hello!👋</h2>
+          <h2 className={styles.hello}>I guess you're here to get to know me 😉</h2>
           <div className={styles.ms_char}>
             <Image
-              src="/ms.png"
-              alt="character"
-              width={325}
-              height={300}
+              src="/yeti.png"
+              alt="yeti"
+              width={400}
+              height={400}
               className={styles.character}
             />
           </div>
@@ -28,10 +28,35 @@ export default function About() {
               curiosity.
             </p>
             <p className={styles.content_text2}>
-              I am currently a student at the British Columnbia Institute of
+              I am currently a student at the British Columbia Institute of
               Technology studying Digital Design and Development. I am currently
               looking for an internship for 2025.
             </p>
+            <p className={styles.content_text3}>My Current Favourites</p>
+            <p className={styles.content_text4}>
+              When I'm not designing or studying, you will find me training
+              martial arts or playing video games. Below, you can see what some
+              of my current favourites are:
+            </p>
+              <ul className={styles.obssesed}>
+             <li><strong>Food:</strong> Pizza, Croissants, Banh Mi</li> 
+              <li><strong>Video Games:</strong> Marvel Rivals, MapleStory</li>
+              <li><strong>Martial arts:</strong> Brazilian Jiu Jitsu, Muay Thai</li>
+              </ul>
+            <iframe
+              style={{
+                borderRadius: "12px",
+                width: "100%",
+                height: "100px",
+                border: "none",
+                marginTop: "20px", 
+              }}
+              src="https://open.spotify.com/embed/track/6ZRuF2n1CQxyxxAAWsKJOy?utm_source=generator&theme=0"
+              allowFullScreen
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Spotify Embed"
+            ></iframe>
           </div>
         </div>
       </main>
