@@ -10,11 +10,11 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
-    max-width: 1200px; 
-    width: 100%; 
-    margin: 0 auto; 
-    padding: 0 20px; 
-    box-sizing: border-box; 
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .hello {
@@ -24,34 +24,154 @@
 }
 
 .character {
+    margin-top: 5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .content_text {
-    max-width: 100%; 
-    overflow-wrap: break-word; 
-    text-align: left; 
+    max-width: 100%;
+    overflow-wrap: break-word;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Change from center to flex-start */
+    align-items: flex-start;
 }
 
-
 .content_text2 {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     line-height: 1.6;
 }
 
-.obssesed {
-    width: 100%;  /* Take full width of parent */
-    max-width: 600px;  /* Adjust as needed */
-    text-align: left;
-    padding: 10px 0;  /* Add spacing */
-    list-style-position: inside;  /* Keep bullet points inside */
-    list-style: none;
-    
+.content_text3 {
+    font-size: 3rem;
 }
 
+.content_text4 {
+    transform: translateY(-2.5rem);
+}
+
+.obssesed {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin-bottom: 0.5rem;
+}
+
+.spotify {
+    font-size: 1.25rem;
+}
+
+.player {
+    transform: translateY(-1.5rem);
+}
+
+/* Responsive Breakpoints */
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+    .content {
+        grid-template-columns: 1fr;
+        /* Stack content in a single column */
+        padding: 0 10px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .hello {
+        font-size: 2.5rem;
+        /* Smaller font size for mobile */
+        text-align: center;
+        /* Center-align text */
+    }
+
+    .character {
+        margin-top: 2rem;
+        /* Reduce margin for mobile */
+        justify-content: center;
+        /* Center the image */
+    }
+
+    .content_text {
+        align-items: center;
+        /* Center-align text for mobile */
+        text-align: center;
+    }
+
+    .content_text3 {
+        font-size: 2rem;
+        /* Smaller font size for mobile */
+    }
+
+    .content_text4 {
+        transform: translateY(-1.5rem);
+        /* Adjust spacing for mobile */
+    }
+
+    .obssesed {
+        align-items: center;
+        /* Center-align buttons for mobile */
+    }
+
+    .btn {
+        width: 100%;
+        /* Full-width buttons for mobile */
+        max-width: 300px;
+        /* Limit button width */
+    }
+}
+
+/* Tablet (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content {
+        grid-template-columns: 1fr;
+        /* Stack content in a single column */
+        padding: 0 20px;
+        /* Adjust padding for tablet */
+    }
+
+    .hello {
+        font-size: 3rem;
+        /* Adjust font size for tablet */
+        text-align: center;
+        /* Center-align text */
+    }
+
+    .character {
+        margin-top: 3rem;
+        /* Adjust margin for tablet */
+        justify-content: center;
+        /* Center the image */
+    }
+
+    .content_text {
+        align-items: center;
+        /* Center-align text for tablet */
+        text-align: center;
+    }
+
+    .content_text3 {
+        font-size: 2.5rem;
+        /* Adjust font size for tablet */
+    }
+
+    .content_text4 {
+        transform: translateY(-2rem);
+        /* Adjust spacing for tablet */
+    }
+
+    .obssesed {
+        align-items: center;
+        /* Center-align buttons for tablet */
+    }
+
+    .btn {
+        width: 100%;
+        /* Full-width buttons for tablet */
+        max-width: 400px;
+        /* Limit button width */
+    }
+}
