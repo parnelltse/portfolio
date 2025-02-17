@@ -22,7 +22,7 @@ const Header = () => {
               </a>
             </li>
             <li className={styles.navItem}>
-              <a href="/pdf/Resume.pdf" className={styles.navLink} target="_blank" rel="noopener noreferrer">
+              <a href="/Resume.pdf" className={styles.navLink} target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </li>
