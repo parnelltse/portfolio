@@ -1,5 +1,4 @@
-
-
+/* General Styles */
 .title {
     font-weight: 600;
     font-size: 3rem;
@@ -36,29 +35,20 @@
 
 .imageContainer {
     width: 100%;
-    /* Make the container take up the full width of its parent */
     height: auto;
-    /* Set the desired height for the container */
     overflow: hidden;
-    /* Ensure no part of the image overflows the container */
     position: relative;
-    /* Allow the image to align within the container */
     display: flex;
-    /* Center the image */
     align-items: center;
     justify-content: center;
 }
 
 .imageContainer2 {
     width: 100%;
-    /* Make the container take up the full width of its parent */
     height: 675px;
     overflow: hidden;
-    /* Ensure no part of the image overflows the container */
     position: relative;
-    /* Allow the image to align within the container */
     display: flex;
-    /* Center the image */
     align-items: center;
     justify-content: center;
 }
@@ -70,12 +60,10 @@
     object-fit: contain;
 }
 
-
-
-
+/* Grid Styles */
 .imageGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
     grid-template-rows: repeat(2, auto);
     gap: 20px;
 }
@@ -87,26 +75,18 @@
 
 .imageItem2 {
     width: 50%;
-    /* Set the width of the item */
     margin: 0 auto;
-    /* Centers the element horizontally */
     display: block;
-    /* Ensures it behaves as a block-level element */
     text-align: center;
-    /* Centers text inside the image if necessary */
 }
 
-
-.image1,
-.image2 {
+.image1, .image2 {
     width: 100%;
     height: auto;
     object-fit: cover;
-    /* Ensures the image scales well without stretching */
 }
 
-
-
+/* Content Styling */
 .content {
     margin-left: 20rem;
     margin-right: 20rem;
@@ -117,5 +97,89 @@
     justify-content: center;
     margin-top: 2rem;
     font-size: 0.75rem;
+}
 
+/* Mobile and Tablet Responsiveness */
+
+/* Mobile (max-width 767px) */
+@media screen and (max-width: 767px) {
+    .title {
+        font-size: 2rem;  /* Smaller title font */
+    }
+
+    .subhead {
+        font-size: 1.2rem;  /* Adjust subhead font size */
+    }
+
+    .textAndRoleContainer {
+        display: block;  /* Stack text and role */
+        column-gap: 0;  /* Remove column gap */
+    }
+
+    .body_text {
+        font-size: 0.9rem;  /* Smaller body text */
+    }
+
+    .imageContainer {
+        height: 250px;  /* Adjust image height for mobile */
+    }
+
+    .mag {
+        max-width: 100%;  /* Ensure images fit the screen */
+    }
+
+    .imageGrid {
+        grid-template-columns: 1fr;  /* Change grid to single column */
+    }
+
+    .content {
+        margin-left: 1rem;
+        margin-right: 1rem;  /* Adjust content margins for mobile */
+    }
+
+    .caption {
+        font-size: 0.6rem;  /* Smaller caption font for mobile */
+    }
+}
+
+/* Tablet (max-width 1024px) */
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 2.5rem;  /* Adjust title font for tablet */
+    }
+
+    .subhead {
+        font-size: 1.4rem;  /* Adjust subhead font for tablet */
+    }
+
+    .textAndRoleContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  /* Two columns for tablet */
+        column-gap: 2rem;
+    }
+
+    .body_text {
+        font-size: 1rem;  /* Adjust body text for tablet */
+    }
+
+    .imageContainer {
+        height: 300px;  /* Adjust image height for tablet */
+    }
+
+    .mag {
+        max-width: 100%;  /* Ensure images fit the screen */
+    }
+
+    .imageGrid {
+        grid-template-columns: 1fr 1fr;  /* Two-column grid for tablet */
+    }
+
+    .content {
+        margin-left: 5rem;
+        margin-right: 5rem;  /* Adjust content margins for tablet */
+    }
+
+    .caption {
+        font-size: 0.7rem;  /* Adjust caption font for tablet */
+    }
 }

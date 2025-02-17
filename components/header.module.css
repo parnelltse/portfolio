@@ -3,41 +3,55 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 1rem;
-}
-
-.container {
+  }
+  
+  .container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; /* Ensures logo is on the left and nav on the right */
     align-items: center;
-}
-
-.nav {
+  }
+  
+  .logoContainer {
+    display: inline-block;
+  }
+  
+  .logoLink {
+    display: inline-block;
+  }
+  
+  .logo {
+    height: 40px; /* Adjust logo size */
+    width: auto;
+  }
+  
+  .nav {
     display: flex;
-}
-
-.navList {
+  }
+  
+  .navList {
     list-style: none;
     display: flex;
     gap: 0.75rem;
     margin: 0;
     padding: 0;
-}
-
-.navLink {
+  }
+  
+  .navLink {
     text-decoration: none;
     color: #374735;
     font-weight: bold;
     transition: color 0.3s ease;
-}
-
-.navLink:hover {
+  }
+  
+  .navLink:hover {
     color: #99755c;
-}
-
-.navList li:not(:last-child)::after {
+  }
+  
+  .navList li:not(:last-child)::after {
     content: "/";
     margin-left: 0.5rem;
     color: #374735;
-}
+  }
+  

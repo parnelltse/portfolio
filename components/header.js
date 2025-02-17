@@ -4,6 +4,11 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
+        <div className={styles.logoContainer}>
+          <a href="/" className={styles.logoLink}>
+            <img src="/logo.png" alt="Logo" className={styles.logo} />
+          </a>
+        </div>
         <nav className={styles.nav}>
           <ul className={styles.navList}>
             <li className={styles.navItem}>
@@ -17,7 +22,7 @@ const Header = () => {
               </a>
             </li>
             <li className={styles.navItem}>
-              <a href="/resume" className={styles.navLink}>
+              <a href="/pdf/Resume.pdf" className={styles.navLink} target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </li>
