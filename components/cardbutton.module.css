@@ -14,27 +14,20 @@
 
 .cardButton {
     border: 2px solid #333;
-    /* Added border around everything */
     border-radius: 12px;
-    /* Rounded corners for a cohesive look */
     background: white;
-    /* Ensures a consistent background */
     cursor: pointer;
     width: 400px;
-    /* Fixed width */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     overflow: hidden;
-    /* Ensures nothing spills out */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* Optional shadow for depth */
     transform-style: preserve-3d;
     transition: rotate 400ms ease, transform 400ms;
 }
 
-/* Apply the hover effect when hovering anywhere on the card */
 .cardButton:hover {
     transform: scale(1.05);
 }
@@ -46,13 +39,11 @@
 .imageContainer {
     width: 100%;
     height: 300px;
-    /* Fixed height for the image container */
     position: relative;
     transform-style: preserve-3d;
     transition: rotate 400ms ease, transform 400ms;
     border-radius: 10px;
     overflow: hidden;
-    /* Ensures the image stays within the container */
     margin-top: 1rem;
 }
 
@@ -81,13 +72,11 @@
     height: 100%;
 }
 
-/* Make front image visible when hovering anywhere on the card */
 .cardButton:hover .frontImage {
     opacity: 1;
     transform: translateY(-10px) translateZ(10px);
 }
 
-/* Overlay */
 .overlay {
     position: absolute;
     inset: 0;
@@ -97,12 +86,10 @@
     transition: opacity 400ms;
 }
 
-/* Make overlay visible when hovering anywhere on the card */
 .cardButton:hover .overlay {
     opacity: 1;
 }
 
-/* Shadow */
 .shadow {
     position: absolute;
     inset: 80% 0.5rem 0.5rem;
@@ -113,27 +100,22 @@
     transition: rotate 400ms ease, translate 400ms;
 }
 
-/* Apply shadow effect when hovering anywhere on the card */
 .cardButton:hover .shadow {
     rotate: x -20deg;
     translate: 0 20px;
 }
 
-/* Text Container */
 .textContainer {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    /* Adds padding around the text */
 }
 
 .text {
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    /* Change text color as needed */
     text-align: center;
     margin: 0;
-    /* Removes default margin */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -142,7 +124,6 @@
     width: 100%;
     text-align: center;
     padding: 8px 0;
-    /* Adds spacing above */
 }
 
 .category {
@@ -150,12 +131,5 @@
     text-transform: uppercase;
     font-weight: bold;
     color: #555;
-    /* Slightly muted color */
     letter-spacing: 1px;
-}
-
-.card:hover {
-    cursor: url(https://cur.cursors-4u.net/games/gam-4/gam307.ani),
-        url(https://cur.cursors-4u.net/games/gam-4/gam307.png),
-        auto !important;
 }
