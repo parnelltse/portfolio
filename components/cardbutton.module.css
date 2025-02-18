@@ -14,15 +14,15 @@
 
 .cardButton {
     border: 2px solid #333;
-    border-radius: 12px;
+    border-radius: 16px;
     background: white;
     cursor: pointer;
     width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
     overflow: hidden;
+    gap: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transform-style: preserve-3d;
     transition: rotate 400ms ease, transform 400ms;
@@ -42,7 +42,7 @@
     position: relative;
     transform-style: preserve-3d;
     transition: rotate 400ms ease, transform 400ms;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
     margin-top: 1rem;
 }
@@ -120,16 +120,25 @@
 }
 
 /* Category Container */
-.categoryContainer {
+.categoryContainer,
+.titleContainer {
     width: 100%;
     text-align: center;
-    padding: 8px 0;
 }
 
 .category {
-    font-size: 0.85rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    letter-spacing: 1px;
+
+}
+
+.cardTitle {
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
     color: #555;
     letter-spacing: 1px;
+
 }

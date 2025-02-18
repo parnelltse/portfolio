@@ -44,6 +44,7 @@ const Body = () => {
           link="/aether"
           bgImage="/iphon163.png"
           frontImage="/iphone162.png"
+          title="Aether"
           text="Streamlining paperwork for caregivers to reduce administrative burden and improve efficiency"
           category="Case Study - Mobile App"
         />
@@ -59,6 +60,7 @@ const Body = () => {
             frontImage="/bath.png"
             text="Interior Design Magazine"
             category="Editorial Design - Magazine"
+            title="Eirene"
           />
         </div>
         <div className={styles.card}>
@@ -68,6 +70,7 @@ const Body = () => {
             frontImage="/123.png"
             text="Drink Design and Mockups"
             category="Graphic Design - Brand Mockup"
+            title="Black Crown Meadery"
           />
         </div>
         <div className={styles.card}>
@@ -77,6 +80,7 @@ const Body = () => {
             frontImage="/seiko3.png"
             text="Seiko Watch Ad"
             category="Graphic Design - Advertisement"
+            title="Grand Seiko"
           />
         </div>
       </div>

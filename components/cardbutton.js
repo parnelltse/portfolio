@@ -7,6 +7,7 @@ export default function CardButton({
   bgImage,
   frontImage,
   text,
+  title,
   category,
 }) {
   return (
@@ -34,6 +35,10 @@ export default function CardButton({
 
             <div className={styles.overlay}></div>
             <div className={styles.shadow}></div>
+          </div>
+
+          <div className={styles.titleContainer}>
+            <p className={styles.cardTitle}>{title || "Default Text"}</p>
           </div>
 
           <div className={styles.categoryContainer}>
