@@ -13,23 +13,24 @@
 }
 
 .cardButton {
-    border: 2px solid #333;
-    border-radius: 16px;
-    background: white;
+    border: 2px solid #333; 
+    border-radius: 12px; 
+    background: white; 
     cursor: pointer;
-    width: 400px;
+    width: 400px; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
     gap: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     transform-style: preserve-3d;
     transition: rotate 400ms ease, transform 400ms;
 }
 
+
 .cardButton:hover {
-    transform: scale(1.05);
+    rotate: x 20deg;
 }
 
 .cardButton:hover .imageContainer {
@@ -38,12 +39,12 @@
 
 .imageContainer {
     width: 100%;
-    height: 300px;
+    height: 300px; 
     position: relative;
     transform-style: preserve-3d;
     transition: rotate 400ms ease, transform 400ms;
-    border-radius: 12px;
-    overflow: hidden;
+    border-radius: 10px;
+    overflow: hidden; 
     margin-top: 1rem;
 }
 
@@ -72,11 +73,13 @@
     height: 100%;
 }
 
+
 .cardButton:hover .frontImage {
     opacity: 1;
     transform: translateY(-10px) translateZ(10px);
 }
 
+/* Overlay */
 .overlay {
     position: absolute;
     inset: 0;
@@ -86,10 +89,12 @@
     transition: opacity 400ms;
 }
 
+
 .cardButton:hover .overlay {
     opacity: 1;
 }
 
+/* Shadow */
 .shadow {
     position: absolute;
     inset: 80% 0.5rem 0.5rem;
@@ -100,45 +105,50 @@
     transition: rotate 400ms ease, translate 400ms;
 }
 
+
 .cardButton:hover .shadow {
     rotate: x -20deg;
     translate: 0 20px;
 }
 
+
 .textContainer {
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0; 
 }
 
 .text {
     font-size: 1rem;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); 
     text-align: center;
-    margin: 0;
+    margin: 0; 
     font-family: 'Poppins', sans-serif;
 }
 
 /* Category Container */
-.categoryContainer,
-.titleContainer {
+.categoryContainer {
     width: 100%;
     text-align: center;
+    padding: 8px 0; 
 }
 
 .category {
-    font-size: 1rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
     font-weight: bold;
-    color: #555;
+    color: #374735; 
     letter-spacing: 1px;
-
 }
 
-.cardTitle {
+
+.cardTitle{
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: #555;
-    letter-spacing: 1px;
-
+    color: #374735; 
+    letter-spacing: 1px;    
 }
+
+
+

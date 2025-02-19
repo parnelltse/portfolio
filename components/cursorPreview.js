@@ -1,4 +1,3 @@
-// In a component (e.g., components/CursorPreview.js)
 export default function CursorPreview() {
     return (
       <div style={{ position: 'absolute', top: '0', right: '0' }}>

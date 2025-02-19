@@ -39,6 +39,7 @@ const Body = () => {
       <div className={styles.featureText}>
         <p className={styles.feature_text}>Featured Work</p>
       </div>
+      <div className={styles.griddy2}>
       <div className={styles.card}>
         <CardButton
           link="/aether"
@@ -48,6 +49,17 @@ const Body = () => {
           text="Streamlining paperwork for caregivers to reduce administrative burden and improve efficiency"
           category="Case Study - Mobile App"
         />
+      </div>
+      <div className={styles.card}>
+        <CardButton
+          link="/"
+          bgImage="/budding2.png"
+          frontImage="/budding.png"
+          title="COMING SOON"
+          text="COMING SOON"
+          category="Case Study - Website Design"
+        />
+      </div>
       </div>
       <div className={styles.cool}>
         <p className={styles.feature_text}>Cool stuff I've worked on</p>
