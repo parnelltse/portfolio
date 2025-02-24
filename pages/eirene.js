@@ -122,7 +122,7 @@ export default function Eirene() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p>Click Here to read the Electronic Magazine Online!</p>
+              <button className={styles.btn}>Click Here to read the Electronic Magazine Online!</button>
             </a>
           </div>
         </main>

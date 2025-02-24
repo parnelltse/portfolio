@@ -35,31 +35,23 @@
 
 .imageContainer {
     width: 100%;
-    /* Make the container take up the full width of its parent */
     height: 400px;
-    /* Set the desired height for the container */
     overflow: hidden;
-    /* Ensure no part of the image overflows the container */
     position: relative;
-    /* Allow the image to align within the container */
     display: flex;
-    /* Center the image */
     align-items: center;
     justify-content: center;
 }
 
 .imageContainer2 {
     width: 100%;
-    /* Make the container take up the full width of its parent */
     height: auto;
     overflow: hidden;
-    /* Ensure no part of the image overflows the container */
     position: relative;
-    /* Allow the image to align within the container */
     display: flex;
-    /* Center the image */
     align-items: center;
     justify-content: center;
+    background-color:#daa4bdd2;
 }
 
 .mag {
@@ -93,25 +85,17 @@
 
 .imageItem2 {
     width: 50%;
-    /* Set the width of the item */
     margin: 0 auto;
-    /* Centers the element horizontally */
     display: block;
-    /* Ensures it behaves as a block-level element */
     text-align: center;
-    /* Centers text inside the image if necessary */
 }
 
 .imageItem3 {
     width: 100%;
-    /* Set the width of the item */
     height: 75%;
     margin: 0 auto;
-    /* Centers the element horizontally */
     display: block;
-    /* Ensures it behaves as a block-level element */
     text-align: center;
-    /* Centers text inside the image if necessary */
 }
 
 
@@ -120,7 +104,6 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    /* Ensures the image scales well without stretching */
 }
 
 
@@ -135,6 +118,6 @@
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    font-size: 0.75rem;
+    font-size: 1.25rem;
 
 }
