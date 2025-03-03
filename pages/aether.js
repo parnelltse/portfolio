@@ -14,7 +14,6 @@ export default function Aether() {
             src="/aetherbanner3.png"
             alt="phone screens"
             className={styles.mag}
-            layout="responsive"
             width={11512}
             height={4997}
           />
@@ -36,6 +35,14 @@ export default function Aether() {
               <strong>Streamline</strong> paperwork to reduce burnout and save
               time to allow caregivers to focus on what matters most, providing
               high quality care to seniors.
+              <a
+                href="https://www.figma.com/proto/wx1RABSScHZ6qZIt72YoDL/case-study?node-id=1-15800&p=f&t=aUvsnkSsikpWtUfx-0&scaling=scale-down&content-scaling=fixed&page-id=1%3A15138&starting-point-node-id=1%3A16070"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.abtn}
+              >
+                <button className={styles.btn}>Prototype</button>
+              </a>
             </p>
             <InfoBlock
               className={styles.role}
@@ -109,12 +116,11 @@ export default function Aether() {
                 src="/researchvector2.svg"
                 alt="difficult, time, stress"
                 className={styles.research_img2}
-                layout="responsive"
                 width={100}
                 height={100}
               />
             </div>
-            <p className={styles.research_content2}>
+            <div className={styles.research_content2}>
               <ul>
                 <li>
                   Caregivers often found <strong>complex wording</strong> and{" "}
@@ -135,12 +141,12 @@ export default function Aether() {
                   <strong>causing caregivers to feel burntout.</strong>
                 </li>
               </ul>
-            </p>
+            </div>
             <h3 className={styles.persona}>Creating real-life insights</h3>
             <p className={styles.persona_content}>
               Caregivers spoke and their voices led the way.
             </p>
-            <p>
+            <div>
               Based on the research, two user personas were created based on
               real-life interviews and online research:
               <ul>
@@ -155,7 +161,7 @@ export default function Aether() {
               By creating these personas, the needs of the caregiver can be
               understood to ensure the product is designed for ease of use and
               to reduce the learning curve.
-            </p>
+            </div>
             <div className={styles.persona_img}>
               <Image
                 src="/Primary.jpg"
@@ -335,7 +341,7 @@ export default function Aether() {
                 height={330}
               />
             </div>
-            <p>
+            <div>
               <ul>
                 <li>#F2F2F7 a soft colour to ensure clarity</li>
                 <li>
@@ -348,7 +354,7 @@ export default function Aether() {
                   the app.
                 </li>
               </ul>
-            </p>
+            </div>
 
             <h3 className={styles.hifi1}>Initial High Fidelity Wireframes</h3>
             <p className={styles.persona_content}>
@@ -381,7 +387,7 @@ export default function Aether() {
               />
             </div>
 
-            <p>
+            <div>
               After testing:
               <ul>
                 <li>
@@ -396,7 +402,7 @@ export default function Aether() {
               </ul>
               This iteration of the app served as a testing ground. The next
               iteration of the app was designed with the feedback in mind.
-            </p>
+            </div>
 
             <h3 className={styles.hifi1}>Final High Fidelity Wireframes</h3>
             <p className={styles.persona_content}>
@@ -435,7 +441,7 @@ export default function Aether() {
               />
             </div>
             <p>The final results:</p>
-            <p>
+            <div>
               <ul>
                 <li>
                   <strong>A/B testing:</strong> Caregivers found the app much
@@ -449,7 +455,7 @@ export default function Aether() {
                   design.
                 </li>
               </ul>
-            </p>
+            </div>
             <h3 className={styles.hifi1}>After using the app</h3>
             <p className={styles.persona_content}>
               Time to complete paperwork fell from 7 minutes to 4 minutes.
@@ -530,7 +536,7 @@ export default function Aether() {
               </li>
             </ul>
             <h3 className={styles.finalhead}>Reflection:</h3>
-            <p className={styles.conclude_content}>
+            <div className={styles.conclude_content}>
               My time working on Aether was a great experience that allowed me
               to grow as a designer, developer, and marketer. I gained valuable
               insights into cross-functional collaboration with multiple teams,
@@ -558,7 +564,7 @@ export default function Aether() {
               These takeaways have not only helped me hone my skills as a
               designer and team member, it also let me experience and show my
               appreciation for product development.
-            </p>
+            </div>
           </div>
         </div>
       </main>

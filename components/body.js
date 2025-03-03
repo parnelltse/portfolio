@@ -88,8 +88,8 @@ const Body = () => {
         <div className={styles.card}>
           <CardButton
             link="/seiko"
-            bgImage="/seiko 2.png"
-            frontImage="/seiko3.png"
+            bgImage="/seiko1ad.png"
+            frontImage="/seiko3ad.png"
             text="Seiko Watch Ad"
             category="Graphic Design - Advertisement"
             title="Grand Seiko"

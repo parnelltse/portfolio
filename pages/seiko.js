@@ -68,7 +68,7 @@ export default function Seiko() {
           </div>
           <div className={styles.imageItem}>
             <Image
-              src="/seiko 2.png"
+              src="/seikofal.png"
               alt="mock2"
               width={500}
               height={400}
@@ -78,7 +78,7 @@ export default function Seiko() {
           </div>
           <div className={styles.imageItem}>
             <Image
-              src="/seiko3.png"
+              src="/seikosum.png"
               alt="mock3"
               width={500}
               height={400}
@@ -88,7 +88,7 @@ export default function Seiko() {
           </div>
           <div className={styles.imageItem}>
             <Image
-              src="/seiko4.png"
+              src="/seikowin.png"
               alt="mock3"
               width={500}
               height={400}
@@ -103,7 +103,7 @@ export default function Seiko() {
         <div className={styles.imageGrid2}>
           <div className={styles.imageItem}>
             <Image
-              src="/seiko7.png"
+              src="/seiko1ad.png"
               alt="ad1"
               width={500}
               height={400}
@@ -113,7 +113,7 @@ export default function Seiko() {
           </div>
           <div className={styles.imageItem}>
             <Image
-              src="/seiko5.png"
+              src="/seiko3ad.png"
               alt="ad2"
               width={500}
               height={400}
@@ -123,7 +123,7 @@ export default function Seiko() {
           </div>
           <div className={styles.imageItem}>
             <Image
-              src="/seiko6.png"
+              src="/seiko4ad.png"
               alt="ad3"
               width={500}
               height={400}

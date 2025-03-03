@@ -1,4 +1,6 @@
-/* Base Styles */
+
+
+
 .title {
     font-weight: 600;
     font-size: clamp(2rem, 8vw, 3rem);
@@ -53,17 +55,14 @@
 }
 
 .content {
-    margin: 0 auto;
-    padding: 0 2rem;
-    /* Responsive padding */
-    max-width: 1200px;
-    /* Limit max width for larger screens */
+    max-width: 100vw; 
+    overflow-x: hidden; 
 }
 
 .problemSolution {
     display: grid;
     grid-template-columns: 1fr;
-    /* Single column by default */
+    
     gap: 2rem;
 }
 
@@ -170,10 +169,8 @@
 .persona,
 .research {
     position: static;
-    /* Adjusted for responsiveness */
     transform: none;
-    /* Removed fixed transform */
-    margin-top: 1rem;
+    margin-top: 5rem;
 }
 
 .research_content,
@@ -186,6 +183,28 @@
     margin-top: -0.5rem;
     /* Adjusted for spacing */
 }
+
+.abtn {
+    display: block; /* Makes the <a> a block element */
+    width: fit-content; /* Ensures it only takes up the button's width */
+    margin-top: 10px; /* Creates spacing from the text above */
+}
+
+.btn {
+    display: inline-block; /* Ensures button is a block inside the <a> */
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    background-color: #99755c;
+    color: #374735;
+}
+
+.btn:hover {
+    background-color: #374735;
+    color: #99755c;
+}
+
+
 
 /* Tablet Breakpoint (768px) */
 @media (min-width: 768px) {
@@ -216,9 +235,7 @@
     .persona,
     .research {
         position: static;
-        /* Reset position for grid layout */
         transform: none;
-        /* Reset transform for grid layout */
     }
 }
 
