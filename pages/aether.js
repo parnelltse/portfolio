@@ -495,6 +495,15 @@ export default function Aether() {
                 allowFullScreen
               />
             </div>
+            <div>
+      <h3 className={styles.hifi1}>Marketing Material</h3>
+      <p className={styles.persona_content}>Take a look at the brochure!</p>
+
+      <div className={styles.bcontainer}>
+        <Image src="/b1.jpg" alt="Brochure 1" width={500} height={200} />
+        <Image src="/b2.jpg" alt="Brochure 2" width={500} height={200} />
+      </div>
+    </div>
           </div>
           <div className={styles.conclude}>
             <h2 className={styles.conclude_head}>

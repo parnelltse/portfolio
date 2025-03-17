@@ -176,22 +176,22 @@
 .research_content,
 .persona_content {
     font-size: clamp(1.25rem, 4vw, 2rem);
-    /* Responsive font size */
+   
 }
 
 .persona_content {
     margin-top: -0.5rem;
-    /* Adjusted for spacing */
+    
 }
 
 .abtn {
-    display: block; /* Makes the <a> a block element */
-    width: fit-content; /* Ensures it only takes up the button's width */
-    margin-top: 10px; /* Creates spacing from the text above */
+    display: block; 
+    width: fit-content; 
+    margin-top: 10px; 
 }
 
 .btn {
-    display: inline-block; /* Ensures button is a block inside the <a> */
+    display: inline-block; 
     padding: 10px 20px;
     border-radius: 25px;
     font-size: 1.5rem;
@@ -204,25 +204,34 @@
     color: #99755c;
 }
 
+.bcontainer{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.bcontainer img {
+    width: 600px !important;
+    height: auto !important;
+    object-fit: contain;
+  }
 
 
 /* Tablet Breakpoint (768px) */
 @media (min-width: 768px) {
     .textAndRoleContainer {
         grid-template-columns: 2fr 1fr;
-        /* Two columns for larger screens */
         gap: 10rem;
     }
 
     .problemSolution {
         grid-template-columns: 1fr 1fr;
-        /* Two columns for larger screens */
         gap: 10rem;
     }
 
     .persona_img {
         grid-template-columns: 1fr 1fr;
-        /* Two columns for larger screens */
         gap: 3rem;
     }
 
@@ -243,10 +252,8 @@
 @media (min-width: 1024px) {
     .content {
         padding: 0 10rem;
-        /* Wider padding for larger screens */
     }
 
-    /* Grid layout for translateX() elements */
     .hifi1,
     .vis_design,
     .lofi,
@@ -257,13 +264,10 @@
     .research {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* Two columns for desktop */
         gap: 2rem;
         position: relative;
-        /* Relative positioning for grid */
     }
 
-    /* Apply translateX() to individual grid items */
     .hifi1>*,
     .vis_design>*,
     .lofi>*,
@@ -273,6 +277,5 @@
     .persona>*,
     .research>* {
         transform: translateX(-20rem);
-        /* Apply translateX() to grid items */
     }
 }
