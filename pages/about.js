@@ -1,17 +1,36 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/About.module.css";
 import Image from "next/image";
 import OverlayBtn from "@/components/overlaybtn";
 
 export default function About() {
+  const [isBlank, setIsBlank] = useState(false); // State to control blank page
+  const [startAnimation, setStartAnimation] = useState(false); // New state for animation trigger
+
+  const handleClick = () => {
+    setIsBlank(true); // Make the page blank
+    console.log("Button clicked, page will go blank for 1 second...");
+
+    // After 1 second, restore the page content and trigger animation
+    setTimeout(() => {
+      setIsBlank(false); // Restore the content
+      setStartAnimation(true); // Start animation
+    }, 1000);
+
+    // Reset animation state after another second to allow re-triggering
+    setTimeout(() => {
+      setStartAnimation(false); // Reset animation state
+    }, 2000);
+  };
+
   return (
     <>
       <Header />
       <div className={styles.homeContainer}>
-        <main>
-          <div className={styles.content}>
+        <main className={isBlank ? styles.blankPage : styles.mainContent}>
+          <div className={`${styles.content} ${startAnimation ? styles.falling : ""}`}>
             <h2 className={styles.hello}>
               I guess you're here to get to know me 😉
             </h2>
@@ -23,6 +42,9 @@ export default function About() {
                 height={400}
                 className={styles.character}
               />
+              <div>
+                <button onClick={handleClick}>Click me!</button>
+              </div>
             </div>
             <div className={styles.content_text}>
               <p className={styles.content_text2}>

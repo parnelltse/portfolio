@@ -95,6 +95,16 @@ const Body = () => {
             title="Grand Seiko"
           />
         </div>
+        <div className={styles.card}>
+          <CardButton
+            link="/f1"
+            bgImage="/f1img.PNG"
+            frontImage="/f2.PNG"
+            text="Forumla 1 pit stop motion graphics"
+            category="Motion Graphics - Video Editing"
+            title="Formula 1 Pit stop"
+          />
+        </div>
       </div>
     </main>
   );
