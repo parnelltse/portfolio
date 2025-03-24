@@ -168,7 +168,7 @@ export default function Budding() {
             </p>
             <div className={styles.compAnal}>
               <Image
-                src="/budcomp.png"
+                src="/budcomp.PNG"
                 alt="Competitive Analysis"
                 className={styles.flow_img2}
                 width={900} // Adjust size as needed
