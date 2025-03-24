@@ -176,7 +176,7 @@ export default function Budding() {
               />
             </div>
             <a
-              href="https://docs.google.com/spreadsheets/d/1RCPPM5PdGDt8yS380GO-4ETorB_CDGzmc7eBbYbbUJk/edit?gid=0#gid=0"
+              href="https://docs.google.com/spreadsheets/d/1s5kidw7Pf9fpCAXDfItVVDma4kKK_lYj07S1Pph7VVI/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.analysisButton}
