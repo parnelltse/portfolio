@@ -1,0 +1,298 @@
+
+
+
+.title {
+    font-weight: 600;
+    font-size: clamp(2rem, 8vw, 3rem);
+    /* Responsive font size */
+    color: #374735;
+    margin-bottom: 0.5rem;
+}
+
+.subhead {
+    font-weight: 400;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    /* Responsive font size */
+    margin-top: 0;
+}
+
+.emoticon {
+    color: #99755c;
+}
+
+.textAndRoleContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column by default */
+    gap: 2rem;
+    align-items: start;
+}
+
+.body_text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.role {
+    transform: translateY(0);
+    /* Adjusted for responsiveness */
+    line-height: 1.6;
+}
+
+.imageContainer2 {
+    width: 100%;
+    display: flex;
+    background-color: #bcd4ae;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.mag {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
+.content {
+    max-width: 100vw; 
+    overflow-x: hidden; 
+}
+
+.problemSolution {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    gap: 2rem;
+}
+
+.problem,
+.solution {
+    flex: 1;
+}
+
+.research_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.research_img2 {
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+}
+
+.persona_img {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 1rem 1rem 1rem 3rem
+}
+
+.persona_img2 {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+}
+
+.compAnal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  .compAnal2 {
+    width: 100%;
+    max-width: 100rem;
+    height: 725px; /* Fixed height */
+  }
+
+  
+
+
+
+.flow_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    background-color:#f2f2f2;
+}
+
+
+.flow_img2{
+    width: 100%;
+    max-width: 70rem;
+    height: auto;
+}
+
+.lofi_img2,
+.palette_img {
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+}
+
+.palette_img2 {
+    width: 100%;
+    max-width: 65rem;
+    height: auto;
+}
+
+.palette {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.aetherproblem,
+.solution2,
+.process_sub,
+.conclude_head {
+    color: #374735;
+}
+
+.giver,
+.solution_2,
+.finalhead,
+.hifi1,
+.vis_design,
+.lofi,
+.midfi,
+.journey,
+.comp,
+.persona,
+.research {
+    color: #99755c;
+}
+
+.hifi1,
+.vis_design,
+.lofi,
+.midfi,
+.journey,
+.comp,
+.persona,
+.research {
+    position: static;
+    transform: none;
+    margin-top: 5rem;
+}
+
+.research_content,
+.persona_content {
+    font-size: clamp(1.25rem, 4vw, 2rem);
+   
+}
+
+.persona_content {
+    margin-top: -0.5rem;
+    
+}
+
+.abtn {
+    display: block; 
+    width: fit-content; 
+    margin-top: 10px; 
+}
+
+.btn {
+    display: inline-block; 
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    background-color: #99755c;
+    color: #374735;
+}
+
+.btn:hover {
+    background-color: #374735;
+    color: #99755c;
+}
+
+.bcontainer{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.bcontainer img {
+    width: 600px !important;
+    height: auto !important;
+    object-fit: contain;
+  }
+
+
+/* Tablet Breakpoint (768px) */
+@media (min-width: 768px) {
+    .textAndRoleContainer {
+        grid-template-columns: 2fr 1fr;
+        gap: 10rem;
+    }
+
+    .problemSolution {
+        grid-template-columns: 1fr 1fr;
+        gap: 10rem;
+    }
+
+    .persona_img {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .hifi1,
+    .vis_design,
+    .lofi,
+    .midfi,
+    .journey,
+    .comp,
+    .persona,
+    .research {
+        position: static;
+        transform: none;
+    }
+}
+
+/* Desktop Breakpoint (1024px) */
+@media (min-width: 1024px) {
+    .content {
+        padding: 0 10rem;
+    }
+
+    .hifi1,
+    .vis_design,
+    .lofi,
+    .midfi,
+    .journey,
+    .comp,
+    .persona,
+    .research {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        position: relative;
+    }
+
+    .hifi1>*,
+    .vis_design>*,
+    .lofi>*,
+    .midfi>*,
+    .journey>*,
+    .comp>*,
+    .persona>*,
+    .research>* {
+        transform: translateX(-20rem);
+    }
+}

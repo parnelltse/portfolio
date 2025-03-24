@@ -25,10 +25,10 @@ const Body = () => {
 
   return (
     <main className={styles.container}>
-      <h1 className={styles.heading}>Hi! My name is Parnell</h1>
+      <h1 className={styles.heading}>Hi, I'm Parnell!</h1>
       <h2 className={styles.heading2}>
-        I’m a UX/UI and Brand Designer. Basically, I’m the wizard who turns
-        ideas into creative, user-friendly experiences.
+        I’m a UX/UI and Brand Designer. Basically, I’m the wizard who transforms
+        ideas into impactful, user-centric solutions.
       </h2>
       <h2 className={styles.heading3}>I am also a...</h2>
       <div className={styles.roleContainer}>
@@ -52,12 +52,12 @@ const Body = () => {
       </div>
       <div className={styles.card}>
         <CardButton
-          link="/"
+          link="/budding"
           bgImage="/budding2.png"
-          frontImage="/budding.png"
-          title="COMING SOON"
-          text="COMING SOON"
-          category="Case Study - Website Design"
+          frontImage="/budhome.png"
+          title="Budding Writers"
+          text="Designing and developing a brand identity and website for a grassroots bookstore cafe Budding Writers"
+          category="Case Study - Website Design - Branding"
         />
       </div>
       </div>

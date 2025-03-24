@@ -461,7 +461,7 @@ export default function Aether() {
               Time to complete paperwork fell from 7 minutes to 4 minutes.
             </p>
             <p>
-              Without the Aether, the average time to fill out paperwork was 7
+              Without Aether, the average time to fill out paperwork was 7
               minutes for a single page. After having caregivers and many other
               users use the app, time to fill out a single page of paperwork
               fell to <strong>4 minutes, a drop of ~42%.</strong> Users
@@ -497,11 +497,12 @@ export default function Aether() {
             </div>
             <div>
       <h3 className={styles.hifi1}>Marketing Material</h3>
-      <p className={styles.persona_content}>Take a look at the brochure!</p>
+      <p className={styles.persona_content}>Take a look at the brochure and business cards!</p>
 
       <div className={styles.bcontainer}>
-        <Image src="/b1.jpg" alt="Brochure 1" width={500} height={200} />
-        <Image src="/b2.jpg" alt="Brochure 2" width={500} height={200} />
+        <Image src="/aebroch.png" alt="Brochure 1" width={500} height={200} />
+        <Image src="/aecard.png" alt="Brochure 1" width={500} height={200} />
+        
       </div>
     </div>
           </div>

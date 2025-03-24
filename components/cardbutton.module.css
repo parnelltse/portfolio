@@ -13,9 +13,8 @@
 }
 
 .cardButton {
-    border: 2px solid #333;
-    border-radius: 12px;
-    background: white;
+    border: solid white;
+    background: #ffffff;
     cursor: pointer;
     width: 400px;
     display: flex;
@@ -23,7 +22,6 @@
     align-items: center;
     gap: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transform-style: preserve-3d;
     transition: rotate 400ms ease, transform 400ms;
 }

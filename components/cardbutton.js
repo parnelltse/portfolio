@@ -37,17 +37,11 @@ export default function CardButton({
             <div className={styles.shadow}></div>
           </div>
 
-          <div className={styles.titleContainer}>
-            <p className={styles.cardTitle}>{title || "Default Text"}</p>
-          </div>
+          <p className={styles.cardTitle}>{title || "Default Text"}</p>
 
-          <div className={styles.categoryContainer}>
-            <p className={styles.category}>{category || "Default Category"}</p>
-          </div>
+          <p className={styles.category}>{category || "Default Category"}</p>
 
-          <div className={styles.textContainer}>
-            <p className={styles.text}>{text || "Default Text"}</p>
-          </div>
+          <p className={styles.text}>{text || "Default Text"}</p>
         </button>
       </Link>
     </div>
