@@ -261,6 +261,21 @@ export default function About() {
                 />
               </div>
               <p className={styles.spotify}>What I'm Currently Listening To</p>
+              <iframe
+                style={{
+                  borderRadius: "12px",
+                  width: "100%",
+                  height: "152px",
+                  border: "none",
+                  marginTop: "20px",
+                }}
+                src="https://open.spotify.com/embed/track/47No93LxERvV6MtOAmQzHS?utm_source=generator"
+                width="100%"
+                height="352"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </main>
