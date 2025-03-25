@@ -1,53 +1,24 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "../styles/About.module.css";
 import Image from "next/image";
 import OverlayBtn from "@/components/overlaybtn";
-import { motion } from "framer-motion";
+import Matter from "matter-js";
 
-const Ball = ({ ball, updateBallPosition }) => {
+const Ball = ({ ball }) => {
   return (
-    <motion.div
-      key={ball.id}
+    <div
       style={{
         position: "absolute",
-        top: ball.y,
-        left: ball.x,
-        width: ball.size,
-        height: ball.size,
+        top: ball.position.y,
+        left: ball.position.x,
+        width: ball.circleRadius * 2,
+        height: ball.circleRadius * 2,
         borderRadius: "50%",
-        backgroundColor: ball.color,
-        pointerEvents: "auto",
-      }}
-      drag
-      dragMomentum={false}
-      dragConstraints={{
-        left: 0,
-        top: 0,
-        right: window.innerWidth,
-        bottom: window.innerHeight - 100,
-      }}
-      dragElastic={{ y: 0.8 }}
-      onDrag={(e, info) => {
-        const updatedBall = {
-          ...ball,
-          x: info.point.x,
-          y: info.point.y,
-        };
-        updateBallPosition(updatedBall);
-      }}
-      onDragEnd={(e, info) => {
-        const updatedBall = {
-          ...ball,
-          x: info.point.x,
-          y: info.point.y,
-        };
-        updateBallPosition(updatedBall);
-      }}
-      whileDrag={{
-        scale: 5.0,
-        transition: { type: "spring", stiffness: 300, damping: 30 },
+        backgroundColor: ball.render.fillStyle,
+        transform: "translate(-50%, -50%)",
+        pointerEvents: "none",
       }}
     />
   );
@@ -56,34 +27,117 @@ const Ball = ({ ball, updateBallPosition }) => {
 export default function About() {
   const [isBlank, setIsBlank] = useState(false);
   const [balls, setBalls] = useState([]);
+  const engineRef = useRef(null);
+  const worldRef = useRef(null);
+  const requestRef = useRef();
+  const sceneRef = useRef();
+  const mouseConstraintRef = useRef(null);
+  const isDraggingRef = useRef(false);
+  const mousePositionRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
-    const gravity = 0.3;
-    const bounceFactor = 0.7;
+    // Setup Matter.js
+    const engine = Matter.Engine.create({
+      gravity: { x: 0, y: 0.5 },
+    });
+    const world = engine.world;
+    engineRef.current = engine;
+    worldRef.current = world;
 
-    const updateBalls = () => {
-      setBalls((prevBalls) =>
-        prevBalls.map((ball) => {
-          const newBall = { ...ball };
+    // Create walls to contain the balls
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const wallOptions = { isStatic: true, render: { visible: false } };
 
-          newBall.vy += gravity;
+    const ground = Matter.Bodies.rectangle(
+      width / 2,
+      height + 25,
+      width,
+      50,
+      wallOptions
+    );
+    const leftWall = Matter.Bodies.rectangle(
+      -25,
+      height / 2,
+      50,
+      height,
+      wallOptions
+    );
+    const rightWall = Matter.Bodies.rectangle(
+      width + 25,
+      height / 2,
+      50,
+      height,
+      wallOptions
+    );
 
-          newBall.y += newBall.vy;
-          if (newBall.y + newBall.size > window.innerHeight) {
-            newBall.y = window.innerHeight - newBall.size;
-            newBall.vy = -newBall.vy * bounceFactor;
-          }
+    Matter.World.add(world, [ground, leftWall, rightWall]);
 
-          return newBall;
-        })
+    // Create a transparent overlay for mouse interactions
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100vw";
+    overlay.style.height = "100vh";
+    overlay.style.zIndex = "2";
+    overlay.style.pointerEvents = "none";
+    document.body.appendChild(overlay);
+
+    const mouse = Matter.Mouse.create(overlay);
+    const mouseConstraint = Matter.MouseConstraint.create(engine, {
+      mouse: mouse,
+      constraint: {
+        stiffness: 0.2,
+        render: {
+          visible: false,
+        },
+      },
+    });
+
+    // Only allow dragging of balls
+    mouseConstraint.collisionFilter.mask = 0x0001;
+    Matter.World.add(world, mouseConstraint);
+    mouseConstraintRef.current = mouseConstraint;
+
+    // Track mouse position
+    const handleMouseMove = (e) => {
+      mousePositionRef.current = { x: e.clientX, y: e.clientY };
+      mouse.position.x = e.clientX;
+      mouse.position.y = e.clientY;
+
+      // Enable dragging
+      const bodies = Matter.Composite.allBodies(world);
+      const isNearBall = bodies.some(
+        (body) =>
+          body.circleRadius &&
+          Matter.Vector.magnitude(
+            Matter.Vector.sub({ x: e.clientX, y: e.clientY }, body.position)
+          ) <
+            body.circleRadius * 1.5
       );
 
-      requestAnimationFrame(updateBalls);
+      overlay.style.pointerEvents = isNearBall ? "auto" : "none";
     };
 
-    updateBalls();
+    window.addEventListener("mousemove", handleMouseMove);
 
-    return () => cancelAnimationFrame(updateBalls);
+    const animate = () => {
+      Matter.Engine.update(engine, 1000 / 60);
+      setBalls(
+        Matter.Composite.allBodies(world).filter((body) => body.circleRadius)
+      );
+      requestRef.current = requestAnimationFrame(animate);
+    };
+
+    requestRef.current = requestAnimationFrame(animate);
+
+    return () => {
+      cancelAnimationFrame(requestRef.current);
+      window.removeEventListener("mousemove", handleMouseMove);
+      document.body.removeChild(overlay);
+      Matter.Engine.clear(engine);
+    };
   }, []);
 
   const handleClick = () => {
@@ -95,22 +149,27 @@ export default function About() {
   };
 
   const createBall = () => {
-    const newBall = {
-      id: Date.now(),
-      x: Math.random() * window.innerWidth,
-      y: 0,
-      size: 40,
-      color: "green",
-      vy: 0,
-    };
+    const colors = ["#ef476f", "#ffd166", "#06d6a0", "#118ab2", "#073b4c"];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
-    setBalls((prevBalls) => [...prevBalls, newBall]);
-  };
-
-  const updateBallPosition = (updatedBall) => {
-    setBalls((prevBalls) =>
-      prevBalls.map((ball) => (ball.id === updatedBall.id ? updatedBall : ball))
+    const ball = Matter.Bodies.circle(
+      Math.random() * window.innerWidth,
+      50,
+      20 + Math.random() * 20,
+      {
+        restitution: 0.9,
+        friction: 0.005,
+        frictionAir: 0.001,
+        render: {
+          fillStyle: randomColor,
+        },
+        collisionFilter: {
+          category: 0x0001,
+        },
+      }
     );
+
+    Matter.World.add(worldRef.current, ball);
   };
 
   return (
@@ -130,42 +189,28 @@ export default function About() {
                 height={400}
                 className={styles.character}
               />
-              <div
-                style={{
-                  position: "relative",
-                  zIndex: 10000,
-                }}
-              >
-                <button
-                  onClick={handleClick}
-                  style={{
-                    position: "relative",
-                    zIndex: 10000,
-                  }}
-                >
+              <div className={styles.btn}>
+                <button className={styles.ball_btn} onClick={handleClick}>
                   Click me!
                 </button>
               </div>
             </div>
 
             <div
-              className={styles.scene}
+              ref={sceneRef}
               style={{
-                position: "absolute",
+                position: "fixed",
                 top: 0,
                 left: 0,
                 width: "100vw",
                 height: "100vh",
                 zIndex: 1,
                 pointerEvents: "none",
+                overflow: "hidden",
               }}
             >
-              {balls.map((ball) => (
-                <Ball
-                  key={ball.id}
-                  ball={ball}
-                  updateBallPosition={updateBallPosition}
-                />
+              {balls.map((ball, index) => (
+                <Ball key={`ball-${index}`} ball={ball} />
               ))}
             </div>
 
@@ -216,21 +261,6 @@ export default function About() {
                 />
               </div>
               <p className={styles.spotify}>What I'm Currently Listening To</p>
-              <iframe
-                style={{
-                  borderRadius: "12px",
-                  width: "100%",
-                  height: "100px",
-                  border: "none",
-                  marginTop: "20px",
-                }}
-                src="https://open.spotify.com/embed/track/6ZRuF2n1CQxyxxAAWsKJOy?utm_source=generator&theme=0"
-                allowFullScreen
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-                title="Spotify Embed"
-                className={styles.player}
-              ></iframe>
             </div>
           </div>
         </main>
