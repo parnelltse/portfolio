@@ -54,7 +54,7 @@ const Body = () => {
         <CardButton
           link="/budding"
           bgImage="/budding2.png"
-          frontImage="/budhome.png"
+          frontImage="/budhome.PNG"
           title="Budding Writers"
           text="Designing and developing a brand identity and website for a grassroots bookstore cafe Budding Writers"
           category="Case Study - Website Design - Branding"
