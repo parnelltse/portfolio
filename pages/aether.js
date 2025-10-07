@@ -321,26 +321,7 @@ export default function Aether() {
               </ul>
             </p>
 
-            <h3 className={styles.vis_design}>Visual Design System</h3>
-            <p className={styles.persona_content}>
-              Defining colours and typography for trust, reliability, and
-              calmness.
-            </p>
-            <p className={styles.vis_design_content}>
-              With the completion and testing of the mid fidelity wireframes,
-              the visual design of the app started. The goal of the design
-              choices is to provide a sense of trust, reliability, and calmness.
-              With that, the colour palette and font choice was chosen
-            </p>
-            <div className={styles.palette}>
-              <Image
-                src="/palette.png"
-                alt="Visual Design"
-                className={styles.palette_img}
-                width={700} // Adjust size as needed
-                height={330}
-              />
-            </div>
+  
             <div>
               <ul>
                 <li>#F2F2F7 a soft colour to ensure clarity</li>
