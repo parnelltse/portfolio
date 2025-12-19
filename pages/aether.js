@@ -29,12 +29,11 @@ export default function Aether() {
           <h3 classname={styles.subby}>AI powered support for caregivers</h3>
           <div className={styles.textAndRoleContainer}>
             <p className={styles.body_text}>
-              Aether is an app created to help caregivers with paperwork. At its
-              core, it uses AI to
-              <strong> Simplify</strong>, <strong>Summarize</strong>, and{" "}
-              <strong>Streamline</strong> paperwork to reduce burnout and save
-              time to allow caregivers to focus on what matters most, providing
-              high quality care to seniors.
+              Aether is an <strong>AI-powered app</strong> built to take <strong>paperwork off caregivers’ plates. </strong> 
+              It <strong>simplifies long, confusing text into plain language, auto-fills forms using 
+              information you already have</strong>, and <strong>converts photos or scans into fillable PDFs</strong> so 
+              everything can be done online. Less time on forms, less burnout, and more time 
+              focused on what actually matters: providing high-quality care to seniors.
               <a
                 href="https://www.figma.com/proto/wx1RABSScHZ6qZIt72YoDL/case-study?node-id=1-15800&p=f&t=aUvsnkSsikpWtUfx-0&scaling=scale-down&content-scaling=fixed&page-id=1%3A15138&starting-point-node-id=1%3A16070"
                 target="_blank"
@@ -67,8 +66,7 @@ export default function Aether() {
             <div className={styles.problem}>
               <h2 className={styles.aetherproblem}>The problem currently</h2>
               <h3 className={styles.giver}>
-                Caregivers lose up to 30 days in a year due to filling out
-                paperwork for seniors.
+                Caregivers lose up to 30 days every year to paperwork.
               </h3>
               <p className={styles.caregiver}>
                 Caregivers face significant challenges with{" "}
@@ -86,7 +84,7 @@ export default function Aether() {
             <div className={styles.solution}>
               <h2 className={styles.solution2}>The solution</h2>
               <h3 className={styles.solution_2}>
-                Aether, an AI powered app to help caregivers witth paperwork.
+                Aether, an AI powered app to help caregivers with paperwork.
               </h3>
               <p className={styles.ae_solution}>
                 To address caregivers' paperwork challenges, the app
@@ -339,7 +337,7 @@ export default function Aether() {
 
             <h3 className={styles.hifi1}>Initial High Fidelity Wireframes</h3>
             <p className={styles.persona_content}>
-              Implementing visual design but falling short.
+              Implementing visual designs but falling short.
             </p>
             <p className={styles.hifi1_content}>
               The intial version of the high fidelity wireframe and prototype

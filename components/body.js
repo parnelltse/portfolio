@@ -27,7 +27,7 @@ const Body = () => {
     <main className={styles.container}>
       <h1 className={styles.heading}>Hi, I'm Parnell!</h1>
       <h2 className={styles.heading2}>
-        I’m a UX/UI and Brand Designer. Basically, I’m the wizard who transforms
+        I’m a Product and Brand Designer. Basically, I’m the wizard who transforms
         ideas into impactful, user-centric solutions.
       </h2>
       <h2 className={styles.heading3}>I am also a...</h2>
